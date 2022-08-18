@@ -6,7 +6,7 @@
   padding: 120px 50px 81px 50px;
 }
 .left-illus {
-  margin-top: 130px;
+  margin-top: 100px;
 }
 .center-illus {
   width: 700px;
@@ -15,6 +15,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 100px;
+}
+.right-illus {
+  margin-top: -100px;
 }
 .hero-title {
   font-family: "Ambit";

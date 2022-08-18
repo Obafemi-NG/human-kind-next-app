@@ -27,6 +27,7 @@ const Hero = () => {
         <h1 className={styles["hero-title"]}>
           The <span className={styles.highlight}>HumanKind</span> Foundation
         </h1>
+        <Image src="/curved.svg" alt="curved-svg" width={208} height={31} />
         <p className={styles["hero-subtitle"]}>
           Humankind foundation is a non governmental organization that is
           focused on providing developmental solutions to individuals and
