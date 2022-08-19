@@ -1,0 +1,112 @@
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3fff3;
+  padding: 120px 50px 81px 50px;
+}
+.left-illus {
+  margin-top: 100px;
+}
+.center-illus {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.right-illus {
+  margin-top: -100px;
+}
+.hero-title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 89px;
+  color: #023003;
+}
+.hero-subtitle {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 15px;
+  color: #023003;
+}
+.highlight {
+  color: #5aee55;
+}
+.hero-btn {
+  display: flex;
+  padding-top: 73px;
+  padding-bottom: 61px;
+}
+.hero-donate-btn {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 15px 30px;
+  color: white;
+  background-color: #5aee55;
+  border: 1px solid #5aee55;
+  line-height: 22px;
+  border-radius: 25px;
+  margin-right: 8px;
+  transition: all 0.6s;
+}
+.hero-donate-btn:hover {
+  background-color: #e6ffe0;
+  color: #5aee55;
+  border: 1px solid #5aee55;
+  cursor: pointer;
+}
+.volunteer {
+  margin-right: 10px;
+}
+.hero-volunteer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  padding: 14px 20px;
+  border-radius: 40px;
+  border: 1px solid transparent;
+  transition: all 0.6s;
+}
+.hero-volunteer-btn:hover {
+  border: #5aee55 1px solid;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.top-left,
+.bottom-right,
+.top-right,
+.bottom-left {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.center-image {
+  width: 260px;
+}
+.bottom-left,
+.bottom-right {
+  margin-top: 20px;
+}
+/* .top-icon {
+  margin-bottom: 20px;
+}
+.bottom-icon {
+  margin-top: 20px;
+} */
