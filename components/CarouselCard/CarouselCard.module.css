@@ -1,0 +1,75 @@
+.card-details {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+  width: 350px;
+  flex-wrap: wrap;
+}
+.title {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 35px;
+  color: #5aee55;
+}
+.subtitle {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #023003;
+  margin-top: 5px;
+}
+.content {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.learn-btn {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  border: 1px solid #5aee55;
+  background-color: #e6ffe0;
+  border-radius: 25px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5aee55;
+}
+.learn-btn:hover {
+  cursor: pointer;
+}
+.learn-more-icon {
+  margin-left: 5px;
+}
+
+.carousel-card-container {
+  transition: transform 0.3s;
+}
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 340px;
+  background-color: #f3fff3;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 25px;
+}
+.image-container {
+  width: 240px;
+  height: 300px;
+}
