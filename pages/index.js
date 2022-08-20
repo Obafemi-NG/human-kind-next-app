@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Aim from "../sections/Aim";
+import Attribute from "../sections/Attribute";
 import CarouselSection from "../sections/Carousel";
 import Hero from "../sections/Hero";
 import Quotes from "../sections/Quotes";
@@ -21,6 +22,7 @@ export default function Home() {
         <Quotes />
         <CarouselSection />
         <Aim />
+        <Attribute />
       </main>
     </div>
   );
