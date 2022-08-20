@@ -4,6 +4,7 @@ import Aim from "../sections/Aim";
 import Attribute from "../sections/Attribute";
 import CarouselSection from "../sections/Carousel";
 import Hero from "../sections/Hero";
+import Newsletter from "../sections/Newsletter";
 import Quotes from "../sections/Quotes";
 import Volunteer from "../sections/volunteer";
 import styles from "../styles/Home.module.css";
@@ -25,6 +26,7 @@ export default function Home() {
         <Aim />
         <Attribute />
         <Volunteer />
+        <Newsletter />
       </main>
     </div>
   );
