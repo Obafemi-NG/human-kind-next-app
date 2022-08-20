@@ -1,0 +1,63 @@
+.aim-container {
+  padding: 0px 100px 0px 100px;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  margin-bottom: 50px;
+  color: #023003;
+  text-align: center;
+}
+.title-span {
+  color: #5aee55;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+.aim-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  width: 340px;
+  height: 133px;
+  background-color: #f3fff3;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+.point {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #023003;
+}
+.right-section {
+  position: relative;
+}
+.aims-image-container {
+  /* z-index: 5; */
+}
+.image-backdrop {
+  position: absolute;
+  width: 625px;
+  height: 420px;
+  z-index: -1;
+  border: 2.57203px solid #5aee55;
+  border-radius: 25px;
+  background-color: #e6ffe0;
+  top: -20px;
+  right: -20px;
+  /* margin-top: -70%; */
+  /* margin-left: 70px; */
+}
