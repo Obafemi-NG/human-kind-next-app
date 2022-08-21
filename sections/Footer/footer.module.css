@@ -1,0 +1,93 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  background-color: #f3fff3;
+}
+.links-section {
+  display: flex;
+}
+.about-section {
+  width: 363px;
+}
+.contact-section {
+  width: 300px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo-text {
+  margin-right: 8px;
+}
+.descriptive-text {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #023003;
+}
+.logo-text-title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #023003;
+}
+.logo-text-subtitle {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.285em;
+  color: #023003;
+}
+.footer-links,
+.footer-projects {
+  padding: 0;
+}
+.left-links {
+  margin-right: 50px;
+}
+.link-title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #023003;
+}
+.link,
+.project {
+  list-style: none;
+
+  margin-bottom: 10px;
+}
+.link,
+.project,
+.email,
+.address,
+.tel {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #023003;
+}
+.email,
+.address,
+.tel {
+  margin-bottom: 20px;
+}
+.socials-container {
+  display: flex;
+  margin-bottom: 8px;
+}
+.social {
+  margin-right: 15px;
+}
