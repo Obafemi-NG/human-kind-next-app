@@ -12,7 +12,7 @@ const ContactSuccess = () => {
         <p className={styles["page-title"]}>
           {" "}
           Thank you{" "}
-          <span className={styles["title-span"]}>for reaching out</span>{" "}
+          <span className={styles["title-span"]}>for reaching ou</span>{" "}
         </p>
         <p className={styles["page-subtitle"]}>
           You will hear from us via e-mail{" "}
