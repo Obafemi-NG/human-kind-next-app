@@ -1,0 +1,47 @@
+.page-content {
+  padding-top: 120px;
+  width: 500px;
+  margin: auto;
+}
+.page-title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  color: #5aee55;
+}
+.title-span {
+  color: #023003;
+}
+.page-subtitle {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 8px;
+  text-align: center;
+  color: #023003;
+}
+.image-container {
+  padding: 20px 10px;
+}
+.anything-else {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #023003;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+.event-btn {
+  color: #5aee55;
+}
+.event-btn:hover {
+  cursor: pointer;
+}
