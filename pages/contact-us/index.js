@@ -33,10 +33,12 @@ const ContactUs = () => {
         <div className={styles["right-section"]}>
           <Image src="/dialog.png" alt="dialog-icon" width={80} height={80} />
           <p className={styles["form-title"]}>
-            We`d love to hear from{" "}
+            We&rsquo;d love to hear from{" "}
             <span className={styles["contact-us-span"]}>you</span>
           </p>
-          <p className={styles["tell-us"]}>Tell us what`s on your mind. 👇</p>
+          <p className={styles["tell-us"]}>
+            Tell us what&rsquo;s on your mind. 👇
+          </p>
           <form className={styles["form-container"]}>
             <div className={styles["input-label-container"]}>
               <label className={styles.label}>Name</label>

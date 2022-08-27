@@ -1,0 +1,96 @@
+.page-content {
+  padding: 120px 200px;
+}
+.header {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 89px;
+  color: #5aee55;
+  text-align: center;
+}
+.top-section {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding: 0px 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-text {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  padding-left: 60px;
+  line-height: 46px;
+  color: #023003;
+}
+.top-text-span {
+  color: #5aee55;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid #5aee55;
+}
+.about-us-text,
+.founder-remark {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: justify;
+  margin-top: 50px;
+  color: #023003;
+}
+.founder {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 50px auto;
+  text-align: center;
+  color: #5aee55;
+}
+.about-founder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.founder-image {
+  width: 200px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+.name {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 46px;
+  color: #023003;
+  margin-bottom: 10px;
+}
+.position {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #023003;
+  margin-bottom: 10px;
+}
+.firm {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #5aee55;
+}
+.remark-span {
+  margin-bottom: 10px;
+}
