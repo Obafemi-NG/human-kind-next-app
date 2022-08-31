@@ -1,0 +1,150 @@
+.page-container {
+  padding-top: 120px;
+  display: flex;
+  padding-right: 50px;
+  margin-bottom: 80px;
+}
+.left-section {
+  margin-right: 80px;
+}
+.contact-us {
+  padding-left: 50px;
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 77px;
+  line-height: 89px;
+  margin-bottom: 100px;
+  color: #5aee55;
+}
+
+.right-section {
+  width: 650px;
+  padding: 20px 30px;
+}
+.contact-us-span {
+  color: #5aee55;
+}
+.form-title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  color: #023003;
+}
+.form-subtitle,
+.fill-form {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #023003;
+}
+.tell-us {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+.input-label-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.label {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  margin-bottom: 5px;
+  color: #023003;
+}
+.input {
+  padding: 15px;
+  gap: 10px;
+  outline: none;
+  width: 500px;
+  height: 52px;
+  border: 2px solid #5aee55;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #023003;
+}
+.input::placeholder {
+  font-style: italic;
+  font-size: 14px;
+}
+.text-area {
+  border: 2px solid #5aee55;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #023003;
+  outline: none;
+  font-family: sans-serif;
+  padding: 15px;
+}
+.text-area::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
+.volunteer-btn {
+  width: 500px;
+  height: 47px;
+  border: none;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  color: #f3fff3;
+  background: #5aee55;
+  margin-top: 20px;
+  border-radius: 25px;
+}
+.volunteer-btn:hover {
+  cursor: pointer;
+}
+.bottom-right {
+  padding-left: 50px;
+  margin-top: 200px;
+}
+.location {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  color: #023003;
+  margin-bottom: 5px;
+}
+.location-span {
+  color: #5aee55;
+}
+.find-us {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  color: #023003;
+}
+.address,
+.tel,
+.msg,
+.email {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #023003;
+  margin-bottom: 5px;
+}

@@ -1,6 +1,6 @@
 /* Navigation bar container */
 .navbar-container {
-  background-color: #f3fff3;
+  background-color: rgba(243, 255, 243, 0.9);
   opacity: 90%;
   padding: 0px 50px;
   height: 82px;
@@ -47,6 +47,10 @@
   margin-left: 30px;
   font-family: "Archivo";
   color: #023003;
+  display: flex;
+}
+.nav-link:hover {
+  cursor: pointer;
 }
 
 /* Navigation Donation BTN */

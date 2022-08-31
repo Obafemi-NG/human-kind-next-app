@@ -21,7 +21,19 @@ const Navbar = () => {
       <ul className={styles["nav-links"]}>
         <li className={styles["nav-link"]}> About Us </li>
         <li className={styles["nav-link"]}> Volunteer </li>
-        <li className={styles["nav-link"]}> Projects </li>
+        <li className={styles["nav-link"]}>
+          {" "}
+          Projects{" "}
+          <span>
+            {" "}
+            <Image
+              src="/dropdown_btn.svg"
+              alt="dropdown_icon"
+              width={20}
+              height={20}
+            />{" "}
+          </span>{" "}
+        </li>
         <li className={styles["nav-link"]}> Contact Us </li>
         <li className={styles["nav-link"]}> Events </li>
         <li className={styles["nav-link"]}> Blog </li>

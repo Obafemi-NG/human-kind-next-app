@@ -53,6 +53,14 @@ const Footer = () => {
             <Image src="/instagram.svg" alt="ig_icon" width={24} height={24} />
           </div>
           <div className={styles.social}>
+            <Image
+              src="/linkedin_icon.svg"
+              alt="linkedin_icon"
+              width={24}
+              height={24}
+            />
+          </div>
+          <div className={styles.social}>
             <Image src="/twitter.svg" alt="tw_icon" width={24} height={24} />
           </div>
         </div>
