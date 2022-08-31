@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import Aim from "../sections/Aim";
+import Attribute from "../sections/Attribute";
+import CarouselSection from "../sections/Carousel";
 import Hero from "../sections/Hero";
 import Quotes from "../sections/Quotes";
 import styles from "../styles/Home.module.css";
@@ -17,6 +20,9 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Quotes />
+        <CarouselSection />
+        <Aim />
+        <Attribute />
       </main>
     </div>
   );

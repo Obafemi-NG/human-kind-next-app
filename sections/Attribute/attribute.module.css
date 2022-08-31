@@ -1,0 +1,55 @@
+.attribute-section-container {
+  margin-top: 80px;
+  margin-bottom: 100px;
+  margin-bottom: 24px;
+  padding-left: 50px;
+}
+
+.attribute-content {
+  display: flex;
+  align-items: center;
+}
+.title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  color: #023003;
+}
+.title-span {
+  color: #5aee55;
+}
+.hashtags-section {
+  display: flex;
+  padding: 55px 0px;
+}
+.left-section {
+  margin-right: 20px;
+}
+.hashtag-card {
+  width: 300px;
+  height: fit-content;
+  background-color: #f3fff3;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.hashtag {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #5aee55;
+  margin-bottom: 5px;
+}
+.content {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #023003;
+}

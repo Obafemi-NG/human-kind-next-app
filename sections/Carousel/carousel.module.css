@@ -1,0 +1,54 @@
+/* .carousel-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 100px;
+  overflow: hidden;
+}
+.carousel-cards-container {
+  display: flex;
+} */
+
+.carousel-section-container {
+  overflow: hidden;
+  margin-left: 50px;
+  margin-bottom: 62px;
+}
+.top-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.title-span {
+  color: #5aee55;
+}
+.subtitle {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  width: 800px;
+  align-self: center;
+  text-align: center;
+}
+
+/* .control-container {
+  margin-top: 50px;
+  margin-right: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+.left-scroll {
+  margin-right: 30px;
+} */

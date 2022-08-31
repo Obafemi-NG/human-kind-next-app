@@ -1,0 +1,25 @@
+.carouselContainer {
+  padding: 14px;
+}
+.carouselContainerInner {
+  overflow-x: scroll;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.carouselContainerInner::-webkit-scrollbar {
+  display: none;
+}
+.carouselContainerInner > * {
+  scroll-snap-align: center;
+}
+.control-container {
+  margin-top: 50px;
+  margin-right: 80px;
+  display: flex;
+  justify-content: flex-end;
+}
+.left-scroll {
+  margin-right: 30px;
+}
