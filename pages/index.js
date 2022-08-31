@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import Aim from "../sections/Aim";
 import Attribute from "../sections/Attribute";
 import CarouselSection from "../sections/Carousel";
+import Footer from "../sections/Footer";
 import Hero from "../sections/Hero";
 import Newsletter from "../sections/Newsletter";
 import Quotes from "../sections/Quotes";
@@ -27,6 +28,7 @@ export default function Home() {
         <Attribute />
         <Volunteer />
         <Newsletter />
+        <Footer />
       </main>
     </div>
   );
