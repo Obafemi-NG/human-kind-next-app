@@ -1,0 +1,76 @@
+.newsletter-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 72px 0px 107px 50px;
+}
+.left-section {
+  margin-right: 57px;
+}
+.title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  width: 560px;
+  color: #023003;
+}
+.title-span {
+  color: #5aee55;
+}
+.subtitle {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #023003;
+  width: 480px;
+}
+.input-section {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 20px;
+}
+.label {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  color: #023003;
+}
+.input {
+  border-radius: 25px;
+  height: 52px;
+  padding: 15px;
+  outline: none;
+  border: 2px solid #5aee55;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #023003;
+}
+.input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
+.newsletter-btn {
+  background: #5aee55;
+  border-radius: 25px;
+  padding: 15px 20px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  color: #f3fff3;
+  border: none;
+  margin-top: 10px;
+}
+.newsletter-btn:hover {
+  cursor: pointer;
+}
