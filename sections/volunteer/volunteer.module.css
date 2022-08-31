@@ -1,0 +1,62 @@
+.volunteer-section-container {
+  background-color: #f3fff3;
+  display: flex;
+  padding: 72px 0px 105px 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-section {
+  margin-right: 50px;
+}
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title {
+  font-family: "Ambit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  width: 590px;
+  color: #023003;
+}
+.subtitle {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 5px;
+  color: #023003;
+}
+.volunteer-span {
+  color: #5aee55;
+}
+.volunteer-btn {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  padding: 13.5px 20px;
+  color: #f3fff3;
+  display: flex;
+  align-items: center;
+  background: #5aee55;
+  margin-top: 10px;
+  border: 1px solid #5aee55;
+  border-radius: 25px;
+}
+.volunteer-btn:hover {
+  cursor: pointer;
+  border: 1px solid #5aee55;
+  background: #e6ffe0;
+  color: #023003;
+}
+.btn-span {
+  margin-left: 5px;
+}
