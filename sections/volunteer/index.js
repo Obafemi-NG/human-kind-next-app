@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./volunteer.module.css";
 
-import volunteerImage from "../../public/volunteer_image.png";
+import volunteerImage from "../../public/volunteer-section.png";
 
 const Volunteer = () => {
   return (
@@ -43,7 +43,7 @@ const Volunteer = () => {
         </button>
       </div>
       <div className={styles["right-section"]}>
-        <Image src={volunteerImage} alt="volunteer_img" />
+        <Image src={volunteerImage} alt="volunteer_section_img" />
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
   align-items: center;
 }
 .title {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -35,7 +35,7 @@
   border-radius: 25px;
 }
 .point {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -44,9 +44,6 @@
 }
 .right-section {
   position: relative;
-}
-.aims-image-container {
-  /* z-index: 5; */
 }
 .image-backdrop {
   position: absolute;
