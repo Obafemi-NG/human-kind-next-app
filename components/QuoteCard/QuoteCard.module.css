@@ -9,7 +9,7 @@
   justify-content: center;
 }
 .quote-content {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -32,7 +32,7 @@
   margin-left: 10px;
 }
 .quote-author {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;

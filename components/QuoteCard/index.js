@@ -71,7 +71,6 @@ const QuoteCard = () => {
   const shuffleQuotes = useCallback(() => {
     const index = Math.floor(Math.random() * quotes.length);
     setQuote(quotes[index]);
-    // console.log(quote.id);
   }, [quotes]);
 
   useEffect(() => {

@@ -4,7 +4,7 @@
   margin: auto;
 }
 .page-title {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -16,7 +16,7 @@
   color: #023003;
 }
 .page-subtitle {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -29,7 +29,7 @@
   padding: 20px 10px;
 }
 .anything-else {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
