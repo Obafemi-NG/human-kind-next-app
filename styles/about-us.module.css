@@ -2,7 +2,7 @@
   padding: 120px 200px;
 }
 .header {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 77px;
@@ -19,7 +19,7 @@
   justify-content: space-between;
 }
 .top-text {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -36,7 +36,7 @@
 }
 .about-us-text,
 .founder-remark {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -46,7 +46,7 @@
   color: #023003;
 }
 .founder {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -66,7 +66,7 @@
   margin-bottom: 30px;
 }
 .name {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
@@ -75,7 +75,7 @@
   margin-bottom: 10px;
 }
 .position {
-  font-family: "Archivo";
+  font-family: "Archivo" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -84,7 +84,7 @@
   margin-bottom: 10px;
 }
 .firm {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

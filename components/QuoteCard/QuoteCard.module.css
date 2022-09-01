@@ -3,4 +3,40 @@
   height: 370px;
   background-color: #f3fff3;
   border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.quote-content {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  color: #023003;
+}
+.quote_1 {
+  margin-bottom: 10px;
+}
+.quote_2 {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 10px;
+}
+.about-quote {
+  display: flex;
+  align-items: center;
+}
+.author-image-container {
+  margin-left: 10px;
+}
+.quote-author {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  color: #023003;
+  margin-left: 10px;
 }

@@ -9,7 +9,7 @@
 }
 .volunteer {
   padding-left: 50px;
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 77px;
@@ -28,7 +28,7 @@
   margin-bottom: 30px;
 }
 .form-title {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -37,7 +37,7 @@
 }
 .form-subtitle,
 .fill-form {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -54,7 +54,7 @@
   margin-bottom: 10px;
 }
 .label {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -94,7 +94,7 @@
   width: 500px;
   height: 47px;
   border: none;
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;

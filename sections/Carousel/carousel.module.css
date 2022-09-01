@@ -1,14 +1,3 @@
-/* .carousel-section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 100px;
-  overflow: hidden;
-}
-.carousel-cards-container {
-  display: flex;
-} */
-
 .carousel-section-container {
   overflow: hidden;
   margin-left: 50px;
@@ -21,7 +10,7 @@
   margin-bottom: 50px;
 }
 .title {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 64px;
@@ -33,7 +22,7 @@
   color: #5aee55;
 }
 .subtitle {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -42,13 +31,3 @@
   align-self: center;
   text-align: center;
 }
-
-/* .control-container {
-  margin-top: 50px;
-  margin-right: 80px;
-  display: flex;
-  justify-content: flex-end;
-}
-.left-scroll {
-  margin-right: 30px;
-} */

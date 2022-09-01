@@ -23,3 +23,7 @@
 .left-scroll {
   margin-right: 30px;
 }
+.left-scroll:hover,
+.right-scroll:hover {
+  cursor: pointer;
+}
