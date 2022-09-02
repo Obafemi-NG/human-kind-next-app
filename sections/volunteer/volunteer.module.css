@@ -1,13 +1,14 @@
 .volunteer-section-container {
   background-color: #f3fff3;
   display: flex;
-  padding: 72px 0px 105px 50px;
+  padding: 72px 0px 105px 0px;
   align-items: center;
   justify-content: center;
 }
 
 .left-section {
   margin-right: 50px;
+  margin-left: 50px;
 }
 .icon-container {
   display: flex;

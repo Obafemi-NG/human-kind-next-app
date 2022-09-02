@@ -1,11 +1,14 @@
 import Image from "next/image";
 import styles from "./volunteer.module.css";
 
-import volunteerImage from "../../public/volunteer_section.png";
+import volunteerImage from "../../public/volunteer.png";
 
 const Volunteer = () => {
   return (
     <div className={styles["volunteer-section-container"]}>
+      <div className={styles["right-section"]}>
+        <Image src={volunteerImage} alt="volunteer_section_img" />
+      </div>
       <div className={styles["left-section"]}>
         <div className={styles["icon-container"]}>
           <Image
@@ -41,9 +44,6 @@ const Volunteer = () => {
             />{" "}
           </span>{" "}
         </button>
-      </div>
-      <div className={styles["right-section"]}>
-        <Image src={volunteerImage} alt="volunteer_section_img" />
       </div>
     </div>
   );
