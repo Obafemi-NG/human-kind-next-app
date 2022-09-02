@@ -22,7 +22,7 @@
 }
 .logo-text-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 21.5px;
   line-height: 23px;
   color: #023003;
 }
@@ -30,10 +30,11 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.265rem;
   font-style: normal;
 }
-
+.logo-icon {
+  margin-left: 5px;
+}
 /* Navigation Links */
 .nav-links {
   display: flex;

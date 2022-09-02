@@ -84,6 +84,13 @@
 .tel {
   margin-bottom: 20px;
 }
+.tel {
+  display: flex;
+  align-items: center;
+}
+.call-icon {
+  margin-right: 10px;
+}
 .socials-container {
   display: flex;
   align-items: center;

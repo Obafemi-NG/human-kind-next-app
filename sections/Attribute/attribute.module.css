@@ -9,6 +9,14 @@
   display: flex;
   align-items: center;
 }
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hashtag-container {
+  padding-left: 86px;
+}
 .title {
   font-family: "Ambit", sans-serif;
   font-style: normal;

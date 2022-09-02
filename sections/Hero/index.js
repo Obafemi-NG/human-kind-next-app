@@ -25,7 +25,8 @@ const Hero = () => {
       </div>
       <div className={styles["center-illus"]}>
         <h1 className={styles["hero-title"]}>
-          The <span className={styles.highlight}>HumanKind</span> Foundation
+          <span className={styles.highlight}>HumanKind</span>
+          <span className={styles.global}>Foundation Global</span>
         </h1>
         <Image src="/curved.svg" alt="curved-svg" width={208} height={31} />
         <p className={styles["hero-subtitle"]}>

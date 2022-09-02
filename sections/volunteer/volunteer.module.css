@@ -50,12 +50,13 @@
   margin-top: 10px;
   border: 1px solid #5aee55;
   border-radius: 25px;
+  transition: all 0.4s;
 }
 .volunteer-btn:hover {
   cursor: pointer;
-  border: 1px solid #5aee55;
-  background: #e6ffe0;
-  color: #023003;
+  border: 1px solid #2ed228;
+  background: #2ed228;
+  /* color: #023003; */
 }
 .btn-span {
   margin-left: 5px;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./volunteer.module.css";
 
-import volunteerImage from "../../public/volunteer-section.png";
+import volunteerImage from "../../public/volunteer_section.png";
 
 const Volunteer = () => {
   return (

@@ -29,6 +29,12 @@ const Aim = () => {
       point:
         "To expose people to workshops and help them to develop the expertises required in building technological solutions.",
     },
+    {
+      id: 5,
+      iconLink: "/aim_icon_5.svg",
+      point:
+        "To expose people to information technology by organizing boot camps across communities.",
+    },
   ];
   return (
     <div className={styles["aim-container"]}>
