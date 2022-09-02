@@ -8,7 +8,7 @@ const Footer = () => {
         <div className={styles["logo-container"]}>
           <div className={styles["logo-text"]}>
             <h3 className={styles["logo-text-title"]}>HumanKind</h3>
-            <p className={styles["logo-text-subtitle"]}>Foundation</p>
+            <p className={styles["logo-text-subtitle"]}>Foundation Global</p>
           </div>
           <div className={styles["logo-icon"]}>
             <Image
@@ -63,11 +63,28 @@ const Footer = () => {
           <div className={styles.social}>
             <Image src="/twitter.svg" alt="tw_icon" width={24} height={24} />
           </div>
+          <div className={styles.social}>
+            <Image
+              src="/whatsapp.svg"
+              alt="whatsapp_icon"
+              width={24}
+              height={24}
+            />
+          </div>
         </div>
         <p className={styles.address}>
           4, Community Close, Odukoya Estate, Akowonjo, Alimosho, Lagos.
         </p>
-        <p className={styles.tel}>+234 811 200 1648</p>
+        <p className={styles.tel}>
+          {" "}
+          <span className={styles["call-icon"]}>
+            {" "}
+            {
+              <Image src="/call.svg" alt="call_icon" width={18} height={18} />
+            }{" "}
+          </span>{" "}
+          +234 811 200 1648
+        </p>
         <p className={styles.email}>email@example.com</p>
       </div>
     </div>

@@ -22,7 +22,7 @@
   margin-right: 8px;
 }
 .descriptive-text {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -30,22 +30,23 @@
   color: #023003;
 }
 .logo-text-title {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 21px;
   line-height: 23px;
   color: #023003;
 }
+
 .logo-text-subtitle {
-  font-family: "Ambit";
-  font-style: normal;
-  font-weight: 600;
+  font-family: "Ambit", sans-serif;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  letter-spacing: 0.285em;
+  font-style: normal;
   color: #023003;
 }
+
 .footer-links,
 .footer-projects {
   padding: 0;
@@ -54,9 +55,9 @@
   margin-right: 50px;
 }
 .link-title {
-  font-family: "Ambit";
+  font-family: "Ambit", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #023003;
@@ -72,7 +73,7 @@
 .email,
 .address,
 .tel {
-  font-family: "Archivo";
+  font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -83,6 +84,13 @@
 .address,
 .tel {
   margin-bottom: 20px;
+}
+.tel {
+  display: flex;
+  align-items: center;
+}
+.call-icon {
+  margin-right: 10px;
 }
 .socials-container {
   display: flex;

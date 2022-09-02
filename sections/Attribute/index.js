@@ -58,10 +58,17 @@ const Attribute = () => {
   ];
   return (
     <div className={styles["attribute-section-container"]}>
-      <p className={styles.title}>
-        {" "}
-        Our attribute <span className={styles["title-span"]}>hashags</span>{" "}
-      </p>
+      <div className={styles["top"]}>
+        <p className={styles.title}>
+          {" "}
+          Our attribute <span className={styles["title-span"]}>
+            hashags
+          </span>{" "}
+        </p>
+        <div className={styles["hashtag-container"]}>
+          <Image src="/hashtag.svg" alt="hashtag_icon" width={76} height={76} />
+        </div>
+      </div>
       <div className={styles["attribute-content"]}>
         <div className={styles["hashtags-section"]}>
           <div className={styles["left-section"]}>

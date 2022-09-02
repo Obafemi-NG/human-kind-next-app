@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./navbar.module.css";
+import Link from "next/link";
 
-const Navbar = () => {
+const DonateNavbar = () => {
   return (
     <div className={styles["navbar-container"]}>
       <Link href="/">
@@ -23,7 +23,6 @@ const Navbar = () => {
           </div>
         </a>
       </Link>
-
       <ul className={styles["nav-links"]}>
         <li className={styles["nav-link"]}>
           {" "}
@@ -59,13 +58,8 @@ const Navbar = () => {
         <li className={styles["nav-link"]}> Events </li>
         <li className={styles["nav-link"]}> Blog </li>
       </ul>
-      <Link href="donate">
-        <a>
-          <button className={styles["nav-btn"]}>Donate now</button>{" "}
-        </a>
-      </Link>
     </div>
   );
 };
 
-export default Navbar;
+export default DonateNavbar;

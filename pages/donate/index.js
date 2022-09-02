@@ -1,13 +1,13 @@
-import Navbar from "../../components/Navbar";
 import styles from "../../styles/donate.module.css";
 import Footer from "../../sections/Footer";
 import Image from "next/image";
 import donateImage from "../../public/donate_image.png";
+import DonateNavbar from "../../components/Navbar/donate-navbar";
 
 const Donate = () => {
   return (
     <div className={styles["donate-page-container"]}>
-      <Navbar />
+      <DonateNavbar />
       <div className={styles["donate-page-content"]}>
         <div className={styles["left-section"]}>
           <p className={styles["left-section-title"]}> Donate </p>
@@ -15,7 +15,12 @@ const Donate = () => {
         </div>
         <div className={styles["right-section"]}>
           <div className={styles["right-section"]}>
-            <Image src="/dialog.png" alt="dialog-icon" width={80} height={80} />
+            <Image
+              src="/donate_icon.svg"
+              alt="dialog-icon"
+              width={80}
+              height={80}
+            />
             <p className={styles["form-title"]}>
               Help make the world a{" "}
               <span className={styles["contact-us-span"]}>better</span> place
