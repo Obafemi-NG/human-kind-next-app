@@ -70,24 +70,9 @@ const CarouselSection = () => {
       <div className={styles["carousel-cards-container"]}>
         <CarouselScroll>{mappedItem}</CarouselScroll>
       </div>
-      {/* <div className={styles["control-container"]}>
-        <a className={styles["left-scroll"]}>
-          <Image
-            src="/scroll_left.svg"
-            alt="scroll_icon"
-            width={40}
-            height={40}
-          />
-        </a>
-        <a href="#3" className={styles["right-scroll"]}>
-          <Image
-            src="/scroll_right.svg"
-            alt="scroll_icon"
-            width={40}
-            height={40}
-          />
-        </a>
-      </div> */}
+      <div className={styles["mobile-carouseld-cards-container"]}>
+        {mappedItem}
+      </div>
     </div>
   );
 };

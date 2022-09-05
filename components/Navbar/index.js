@@ -64,6 +64,14 @@ const Navbar = () => {
           <button className={styles["nav-btn"]}>Donate now</button>{" "}
         </a>
       </Link>
+      <div className={styles["hamburger-btn"]}>
+        <Image
+          src="/hamburger-btn.svg"
+          alt="hamburger-btn"
+          width={32}
+          height={32}
+        />
+      </div>
     </div>
   );
 };

@@ -74,3 +74,41 @@
 .newsletter-btn:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+  .newsletter-section-container {
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .title {
+    width: 100%;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+  .subtitle {
+    width: 100%;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0px 10px;
+  }
+  .right-section {
+    display: none;
+  }
+  .left-section {
+    margin-right: 0;
+  }
+  .input-section {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-newsletter-image {
+    display: none;
+  }
+}

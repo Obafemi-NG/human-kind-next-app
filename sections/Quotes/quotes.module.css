@@ -14,3 +14,14 @@
 .quote-text {
   color: #5aee55;
 }
+@media screen and (max-width: 480px) {
+  .quotes-section-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .quotes-title {
+    font-size: 40px;
+    line-height: 46px;
+    width: 100%;
+  }
+}

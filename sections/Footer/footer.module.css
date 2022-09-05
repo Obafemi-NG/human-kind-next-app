@@ -100,3 +100,16 @@
 .social {
   margin-right: 15px;
 }
+
+@media screen and (max-width: 480px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .links-section {
+    margin-top: 20px;
+  }
+  .contact-section {
+    margin-top: 20px;
+  }
+}

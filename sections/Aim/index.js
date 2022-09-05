@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./aim.module.css";
 
-import aimImage from "../../public/aim_image.png";
+import aimImage from "../../public/aim-image.png";
 
 const Aim = () => {
   const aimPoints = [
@@ -61,7 +61,6 @@ const Aim = () => {
         <div className={styles["right-section"]}>
           <div className={styles["aims-image-container"]}>
             <Image src={aimImage} alt="aim_image" />
-            <div className={styles["image-backdrop"]}></div>
           </div>
         </div>
       </div>

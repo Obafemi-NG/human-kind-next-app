@@ -113,3 +113,41 @@
 .bottom-right {
   margin-top: 20px;
 }
+
+@media screen and (max-width: 480px) {
+  .hero-container {
+    padding: 50px 20px;
+  }
+  .left-illus {
+    display: none;
+  }
+  .right-illus {
+    display: none;
+  }
+  .hero-title {
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .global {
+    font-size: 28px;
+  }
+  .center-image {
+    width: 184px;
+  }
+  .hero-btn {
+    padding: 20px 0px;
+  }
+  .hero-donate-btn,
+  .hero-volunteer-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .hero-subtitle {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+}

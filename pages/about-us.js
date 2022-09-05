@@ -3,6 +3,7 @@ import styles from "../styles/about-us.module.css";
 import aboutUsImage from "../public/about-us-image.png";
 import founderImage from "../public/founder.png";
 import Image from "next/image";
+import Footer from "../sections/Footer";
 
 const AboutUs = () => {
   return (
@@ -179,6 +180,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

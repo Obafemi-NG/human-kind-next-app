@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./volunteer.module.css";
 
 import volunteerImage from "../../public/volunteer.png";
+import mobileVolunteerImage from "../../public/mobile-volunteer-img.png";
 
 const Volunteer = () => {
   return (
@@ -44,6 +45,9 @@ const Volunteer = () => {
             />{" "}
           </span>{" "}
         </button>
+      </div>
+      <div className={styles["mobile-volunteer-image"]}>
+        <Image src={mobileVolunteerImage} alt="volunteer-image" />
       </div>
     </div>
   );
