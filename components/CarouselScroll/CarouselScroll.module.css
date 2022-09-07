@@ -20,11 +20,13 @@
   display: flex;
   justify-content: flex-end;
 }
-.left-scroll {
-  margin-right: 30px;
+.scroll-right {
+  margin-left: 20px;
 }
-.left-scroll:hover,
-.right-scroll:hover {
+.opaque {
+  opacity: 0.2;
+}
+.non-opaque:hover {
   cursor: pointer;
 }
 
