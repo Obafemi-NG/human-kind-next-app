@@ -1,6 +1,5 @@
 .attribute-section-container {
   margin-top: 80px;
-  margin-bottom: 100px;
   margin-bottom: 24px;
   padding-left: 50px;
 }
@@ -97,5 +96,17 @@
   }
   .hashtag-card {
     width: 320px;
+  }
+}
+
+@media only screen and (max-width: 820px) and (min-width: 481px) {
+  .attribute-section-container {
+    padding: 10px;
+  }
+  .hashtag-container {
+    padding-left: 0px;
+  }
+  .attribute-content {
+    flex-direction: column;
   }
 }

@@ -12,7 +12,7 @@ const ContactUs = () => {
         <div className={styles["left-section"]}>
           <p className={styles["contact-us"]}>Contact us</p>
           <Image src={contactUsImage} alt="contact-us-image" />
-          <div className={styles["bottom-right"]}>
+          <div className={styles["bottom-left"]}>
             <p className={styles["location"]}>
               {" "}
               Our <span className={styles["location-span"]}>Location</span>{" "}

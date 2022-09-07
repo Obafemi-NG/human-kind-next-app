@@ -46,6 +46,7 @@ const Volunteer = () => {
           </span>{" "}
         </button>
       </div>
+
       <div className={styles["mobile-volunteer-image"]}>
         <Image src={mobileVolunteerImage} alt="volunteer-image" />
       </div>
