@@ -7,6 +7,9 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const router = useRouter();
   const [navMenu, setNavMenu] = useState(false);
+  const toggleNavbar = () => {
+    setNavMenu(!navMenu);
+  };
   return (
     <>
       <div className={styles["navbar-container"]}>
@@ -91,56 +94,132 @@ const Navbar = () => {
           </a>
         </Link>
         <div className={styles["hamburger-btn"]}>
-          <Image
-            src="/hamburger-btn.svg"
-            alt="hamburger-btn"
-            width={32}
-            height={32}
-          />
+          {navMenu ? (
+            <div className={styles["toggle-btn"]} onClick={toggleNavbar}>
+              <Image
+                src="/close.svg"
+                alt="hamburger-btn"
+                width={32}
+                height={32}
+              />
+            </div>
+          ) : (
+            <div className={styles["toggle-btn"]} onClick={toggleNavbar}>
+              <Image
+                src="/hamburger-btn.svg"
+                alt="hamburger-btn"
+                width={32}
+                height={32}
+              />
+            </div>
+          )}{" "}
         </div>
       </div>
-      {/* <div className={styles["navbar-dropDown"]}>
-        <ul className={styles["nav-links"]}>
-          <li className={styles["nav-link"]}>
-            {" "}
-            <Link href="/about-us">
-              <a> About Us</a>
-            </Link>{" "}
-          </li>
-          <li className={styles["nav-link"]}>
-            {" "}
-            <Link href="/volunteer">
-              <a>Volunteer</a>
-            </Link>{" "}
-          </li>
-          <li className={styles["nav-link"]}>
-            {" "}
-            Projects{" "}
-            <span>
+
+      {navMenu && (
+        <div className={styles["navbar-dropDown"]}>
+          <ul className={styles["mobile-nav-links"]}>
+            <li className={styles["nav-link"]}>
               {" "}
+              <Link href="/about-us">
+                <a
+                  className={
+                    router.pathname == "/about-us" ? `${styles["active"]}` : ""
+                  }
+                >
+                  {" "}
+                  About Us
+                </a>
+              </Link>{" "}
+            </li>
+            <li className={styles["nav-link"]}>
+              {" "}
+              <Link href="/volunteer">
+                <a
+                  className={
+                    router.pathname == "/volunteer" ? `${styles["active"]}` : ""
+                  }
+                >
+                  Volunteer
+                </a>
+              </Link>{" "}
+            </li>
+            <li className={styles["nav-link"]}>
+              {" "}
+              Projects{" "}
+              <span>
+                {" "}
+                <Image
+                  src="/dropdown_btn.svg"
+                  alt="dropdown_icon"
+                  width={20}
+                  height={20}
+                />{" "}
+              </span>{" "}
+            </li>
+            <li className={styles["nav-link"]}>
+              {" "}
+              <Link href="/contact-us">
+                <a
+                  className={
+                    router.pathname == "/contact-us"
+                      ? `${styles["active"]}`
+                      : ""
+                  }
+                >
+                  Contact Us
+                </a>
+              </Link>{" "}
+            </li>
+            <li className={styles["nav-link"]}> Events </li>
+            <li className={styles["nav-link"]}> Blog </li>
+          </ul>
+          <div>
+            <Link href="donate">
+              <a>
+                <button className={styles["mobile-nav-btn"]}>Donate now</button>{" "}
+              </a>
+            </Link>
+          </div>
+          <div className={styles["socials-container"]}>
+            <div className={styles.social}>
+              <Image src="/facebook.svg" alt="fb_icon" width={24} height={24} />
+            </div>
+            <div className={styles.social}>
               <Image
-                src="/dropdown_btn.svg"
-                alt="dropdown_icon"
-                width={20}
-                height={20}
-              />{" "}
-            </span>{" "}
-          </li>
-          <li className={styles["nav-link"]}>
-            {" "}
-            <Link href="/contact-us">
-              <a>Contact Us</a>
-            </Link>{" "}
-          </li>
-          <li className={styles["nav-link"]}> Events </li>
-          <li className={styles["nav-link"]}> Blog </li>
-        </ul>
-        <Link href="donate">
-          <a>
-            <button className={styles["nav-btn"]}>Donate now</button>{" "}
-          </a>
-        </Link>
-      </div> */}
+                src="/instagram.svg"
+                alt="ig_icon"
+                width={24}
+                height={24}
+              />
+            </div>
+            <div className={styles.social}>
+              <Image
+                src="/linkedin_icon.svg"
+                alt="linkedin_icon"
+                width={24}
+                height={24}
+              />
+            </div>
+            <div className={styles.social}>
+              <Image src="/twitter.svg" alt="tw_icon" width={24} height={24} />
+            </div>
+            <div className={styles.social}>
+              <Image
+                src="/whatsapp.svg"
+                alt="whatsapp_icon"
+                width={24}
+                height={24}
+              />
+            </div>
+          </div>
+          <p className={styles["mobile-navbar-text"]}>
+            At Humankind, our efforts are channeled towards improving living
+            conditions through community based projects and skills empowerment
+            programs.
+          </p>
+        </div>
+      )}
     </>
   );
 };
