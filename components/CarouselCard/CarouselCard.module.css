@@ -71,15 +71,18 @@
 }
 .image-container {
   width: 240px;
-  /* height: 300px; */
 }
 
 @media screen and (max-width: 480px) {
+  .carousel-card-container {
+    width: 100%;
+  }
   .carousel-item {
     flex-direction: column;
     height: fit-content;
     margin-top: 20px;
     padding: 10px;
+    margin-right: 0;
   }
   .subtitle {
     font-size: 16px;
@@ -87,6 +90,8 @@
   }
   .card-details {
     margin-top: 10px;
+    width: 100%;
+    margin-left: 0;
   }
   .image-container {
     width: 100%;

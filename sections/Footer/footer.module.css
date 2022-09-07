@@ -111,6 +111,26 @@
   .contact-section {
     margin-top: 20px;
   }
+  .about-section {
+    width: 100%;
+  }
+  .descriptive-text,
+  .address {
+    line-height: 16px;
+    font-size: 13px;
+  }
+  .link,
+  .tel,
+  .email,
+  .project {
+    font-size: 13px;
+    line-height: 14px;
+  }
+  .footer-links,
+  .footer-projects {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 @media only screen and (max-width: 820px) and (min-width: 481px) {

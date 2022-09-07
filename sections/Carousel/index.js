@@ -70,7 +70,7 @@ const CarouselSection = () => {
       <div className={styles["carousel-cards-container"]}>
         <CarouselScroll>{mappedItem}</CarouselScroll>
       </div>
-      <div className={styles["mobile-carouseld-cards-container"]}>
+      <div className={styles["mobile-carousel-cards-container"]}>
         {mappedItem}
       </div>
     </div>
