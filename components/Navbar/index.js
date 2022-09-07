@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "./navbar.module.css";
 import { useState } from "react";
 
 const Navbar = () => {
+  const router = useRouter();
   const [navMenu, setNavMenu] = useState(false);
   return (
     <>
@@ -33,13 +35,26 @@ const Navbar = () => {
           <li className={styles["nav-link"]}>
             {" "}
             <Link href="/about-us">
-              <a> About Us</a>
+              <a
+                className={
+                  router.pathname == "/about-us" ? `${styles["active"]}` : ""
+                }
+              >
+                {" "}
+                About Us
+              </a>
             </Link>{" "}
           </li>
           <li className={styles["nav-link"]}>
             {" "}
             <Link href="/volunteer">
-              <a>Volunteer</a>
+              <a
+                className={
+                  router.pathname == "/volunteer" ? `${styles["active"]}` : ""
+                }
+              >
+                Volunteer
+              </a>
             </Link>{" "}
           </li>
           <li className={styles["nav-link"]}>
@@ -58,14 +73,20 @@ const Navbar = () => {
           <li className={styles["nav-link"]}>
             {" "}
             <Link href="/contact-us">
-              <a>Contact Us</a>
+              <a
+                className={
+                  router.pathname == "/contact-us" ? `${styles["active"]}` : ""
+                }
+              >
+                Contact Us
+              </a>
             </Link>{" "}
           </li>
           <li className={styles["nav-link"]}> Events </li>
           <li className={styles["nav-link"]}> Blog </li>
         </ul>
         <Link href="donate">
-          <a>
+          <a passHref>
             <button className={styles["nav-btn"]}>Donate now</button>{" "}
           </a>
         </Link>
