@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./footer.module.css";
 
 const Footer = () => {
@@ -29,11 +30,25 @@ const Footer = () => {
         <div className={styles["left-links"]}>
           <p className={styles["link-title"]}>Quick links</p>
           <ul className={styles["footer-links"]}>
-            <li className={styles.link}> About us </li>
-            <li className={styles.link}>Volunteer</li>
+            <li className={styles.link}>
+              {" "}
+              <Link href="/about-us">
+                <a>About us</a>
+              </Link>{" "}
+            </li>
+            <li className={styles.link}>
+              <Link href="/volunteer">
+                <a>Volunteer</a>
+              </Link>
+            </li>
             <li className={styles.link}>Events</li>
             <li className={styles.link}> Blog </li>
-            <li className={styles.link}> Contact us </li>
+            <li className={styles.link}>
+              {" "}
+              <Link href="/contact-us">
+                <a>Contact us</a>
+              </Link>{" "}
+            </li>
           </ul>
         </div>
         <div className={styles["right-links"]}>
@@ -85,7 +100,7 @@ const Footer = () => {
           </span>{" "}
           +234 811 200 1648
         </p>
-        <p className={styles.email}>email@example.com</p>
+        <p className={styles.email}>hfglobal@humankindorg.com</p>
       </div>
     </div>
   );

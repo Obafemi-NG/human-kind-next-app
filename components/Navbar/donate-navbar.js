@@ -58,6 +58,14 @@ const DonateNavbar = () => {
         <li className={styles["nav-link"]}> Events </li>
         <li className={styles["nav-link"]}> Blog </li>
       </ul>
+      <div className={styles["hamburger-btn"]}>
+        <Image
+          src="/hamburger-btn.svg"
+          alt="hamburger-btn"
+          width={32}
+          height={32}
+        />
+      </div>
     </div>
   );
 };

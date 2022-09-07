@@ -1,6 +1,7 @@
 import styles from "./newsletter.module.css";
 
 import newsletterImage from "../../public/newsletter_image.png";
+import mobileNewsletterImage from "../../public/mobile-newsletter-img.png";
 import Image from "next/image";
 
 const Newsletter = () => {
@@ -16,6 +17,9 @@ const Newsletter = () => {
           Be the first to hear about our upcoming programs, events and
           developments.{" "}
         </p>
+        <div className={styles["mobile-newsletter-image"]}>
+          <Image src={mobileNewsletterImage} alt="mobile-newsletter-image" />
+        </div>
         <form className={styles["input-section"]}>
           <label className={styles.label}>Email</label>
           <input

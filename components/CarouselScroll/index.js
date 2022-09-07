@@ -19,9 +19,10 @@ const CarouselScroll = ({ children }) => {
       </div>
       <div className={styles["control-container"]}>
         <div
-          hasItemsOnLeft={hasItemsOnLeft}
           onClick={scrollLeft}
-          className={styles["left-scroll"]}
+          className={
+            hasItemsOnLeft ? `${styles["non-opaque"]}` : `${styles["opaque"]}`
+          }
         >
           <Image
             src="/scroll_left.svg"
@@ -31,16 +32,19 @@ const CarouselScroll = ({ children }) => {
           />
         </div>
         <div
-          hasItemsOnRight={hasItemsOnRight}
           onClick={scrollRight}
-          className={styles["right-scroll"]}
+          className={
+            hasItemsOnRight ? `${styles["non-opaque"]}` : `${styles["opaque"]}`
+          }
         >
-          <Image
-            src="/scroll_right.svg"
-            alt="scroll_icon"
-            width={40}
-            height={40}
-          />
+          <div className={styles["scroll-right"]}>
+            <Image
+              src="/scroll_right.svg"
+              alt="scroll_icon"
+              width={40}
+              height={40}
+            />
+          </div>
         </div>
       </div>
     </div>

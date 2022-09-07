@@ -1,7 +1,6 @@
 .carousel-section-container {
   overflow: hidden;
-  margin-left: 50px;
-  margin-bottom: 62px;
+  margin-bottom: 50px;
 }
 .top-container {
   display: flex;
@@ -30,4 +29,43 @@
   width: 800px;
   align-self: center;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-section-container {
+    margin-left: 0px;
+    padding: 20px;
+  }
+  .carousel-cards-container {
+    display: none;
+  }
+  .mobile-carouseld-cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-carouseld-cards-container {
+    display: none;
+  }
+}
+@media only screen and (max-width: 820px) and (min-width: 481px) {
+  .top-container {
+    width: 85%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .subtitle {
+    width: 100%;
+  }
 }

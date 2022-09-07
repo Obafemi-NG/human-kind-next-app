@@ -3,6 +3,7 @@ import styles from "../styles/about-us.module.css";
 import aboutUsImage from "../public/about-us-image.png";
 import founderImage from "../public/founder.png";
 import Image from "next/image";
+import Footer from "../sections/Footer";
 
 const AboutUs = () => {
   return (
@@ -106,7 +107,7 @@ const AboutUs = () => {
             <div className={styles["chairman"]}>
               <p className={styles.name}> Femi Okikiola </p>
               <p className={styles.position}> Chairman, Board of Trustees </p>
-              <p className={styles.firm}> HumanKind Foundation Africa </p>
+              <p className={styles.firm}> HumanKind Foundation Global </p>
             </div>
           </div>
           <hr className={styles["horizontal-line"]} />
@@ -179,6 +180,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
