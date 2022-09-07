@@ -118,6 +118,9 @@
   .hero-container {
     padding: 50px 20px;
   }
+  .icon-container {
+    width: 134px;
+  }
   .left-illus {
     display: none;
   }

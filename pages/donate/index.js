@@ -3,6 +3,7 @@ import Footer from "../../sections/Footer";
 import Image from "next/image";
 import donateImage from "../../public/donate_image.png";
 import DonateNavbar from "../../components/Navbar/donate-navbar";
+import mobileDonateImage from "../../public/mobile-donate-image.png";
 
 const Donate = () => {
   return (
@@ -11,16 +12,23 @@ const Donate = () => {
       <div className={styles["donate-page-content"]}>
         <div className={styles["left-section"]}>
           <p className={styles["left-section-title"]}> Donate </p>
-          <Image src={donateImage} alt="donate_page_image" />
+          <div className={styles["donate-image"]}>
+            <Image src={donateImage} alt="donate_page_image" />
+          </div>
+          <div className={styles["mobile-donate-image"]}>
+            <Image src={mobileDonateImage} alt="donate_page_image" />
+          </div>
         </div>
         <div className={styles["right-section"]}>
           <div className={styles["right-section"]}>
-            <Image
-              src="/donate_icon.svg"
-              alt="dialog-icon"
-              width={80}
-              height={80}
-            />
+            <div className={styles["icon-container"]}>
+              <Image
+                src="/donate_icon.svg"
+                alt="dialog-icon"
+                width={80}
+                height={80}
+              />
+            </div>
             <p className={styles["form-title"]}>
               Help make the world a{" "}
               <span className={styles["contact-us-span"]}>better</span> place
@@ -82,7 +90,7 @@ const Donate = () => {
                   rows={7}
                 />
               </div>
-              <button className={styles["volunteer-btn"]}> Submit </button>
+              <button className={styles["volunteer-btn"]}> Donate </button>
             </form>
           </div>
         </div>

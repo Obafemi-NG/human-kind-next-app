@@ -12,7 +12,14 @@ const Quotes = () => {
           Famous <span className={styles["quote-text"]}> quotes</span> we
           believe in
         </p>
-        <Image src="/circular.svg" alt="circular-icon" width={80} height={40} />
+        <div className={styles["circular-icon"]}>
+          <Image
+            src="/circular.svg"
+            alt="circular-icon"
+            width={80}
+            height={40}
+          />
+        </div>
       </div>
       <div className={styles["quote-section-icon"]}>
         <Image
