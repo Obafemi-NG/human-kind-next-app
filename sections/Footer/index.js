@@ -100,7 +100,7 @@ const Footer = () => {
           </span>{" "}
           +234 811 200 1648
         </p>
-        <p className={styles.email}>email@example.com</p>
+        <p className={styles.email}>hfglobal@humankindorg.com</p>
       </div>
     </div>
   );
