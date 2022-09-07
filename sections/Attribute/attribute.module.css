@@ -82,6 +82,9 @@
     flex-direction: column;
     padding: 20px 0px;
   }
+  .left-section {
+    margin-right: 0;
+  }
   .content {
     font-size: 13px;
     line-height: 16px;

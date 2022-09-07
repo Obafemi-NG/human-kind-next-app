@@ -33,13 +33,14 @@
 
 @media screen and (max-width: 480px) {
   .carousel-section-container {
-    margin-left: 0px;
+    margin: auto;
     padding: 20px;
+    /* background-color: red; */
   }
   .carousel-cards-container {
     display: none;
   }
-  .mobile-carouseld-cards-container {
+  .mobile-carousel-cards-container {
     display: flex;
     flex-direction: column;
   }
