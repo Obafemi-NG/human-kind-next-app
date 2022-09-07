@@ -45,3 +45,28 @@
 .event-btn:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 480px) {
+  .page-content {
+    width: 100%;
+  }
+  .page-title {
+    font-size: 40px;
+    line-height: 46px;
+    text-align: center;
+  }
+  .page-subtitle {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .image-container {
+    width: 218px;
+    margin: auto;
+  }
+  .anything-else,
+  .event-btn {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+}
