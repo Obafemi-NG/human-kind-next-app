@@ -115,7 +115,7 @@
   }
   .left-section {
     width: 50%;
-    margin-right: 20px;
+    margin-right: 50px;
   }
   .right-section {
     width: 50%;
@@ -127,5 +127,6 @@
   }
   .volunteer {
     padding-left: 20px;
+    margin-bottom: 200px;
   }
 }

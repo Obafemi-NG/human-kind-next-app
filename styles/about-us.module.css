@@ -99,4 +99,10 @@
   .page-content {
     padding: 120px 100px 50px 100px;
   }
+  .top-section {
+    padding: 0px 30px;
+  }
+  .top-text {
+    padding-left: 50px;
+  }
 }

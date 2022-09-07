@@ -116,7 +116,7 @@
     align-items: center;
   }
   .title {
-    /* text-align: center; */
+    text-align: center;
   }
   .mobile-volunteer-image {
     display: flex;
