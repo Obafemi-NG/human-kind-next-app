@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../sections/Footer";
 import styles from "../../styles/volunteer.module.css";
 import volunteerImage from "../../public/volunteer.png";
+import mobileVolunteerImage from "../../public/mobile-volunteer-image.png";
 
 const Volunteer = () => {
   return (
@@ -11,7 +12,12 @@ const Volunteer = () => {
       <div className={styles["volunteer-page-content"]}>
         <div className={styles["left-section"]}>
           <p className={styles.volunteer}> Volunteer </p>
-          <Image src={volunteerImage} alt="volunteer_image" />
+          <div className={styles["volunteer-image"]}>
+            <Image src={volunteerImage} alt="volunteer_image" />
+          </div>
+          <div className={styles["mobile-volunteer-image"]}>
+            <Image src={mobileVolunteerImage} alt="volunteer_image" />
+          </div>
         </div>
         <div className={styles["right-section"]}>
           <div className={styles["icon-container"]}>
@@ -76,7 +82,19 @@ const Volunteer = () => {
                 rows={7}
               />
             </div>
-            <button className={styles["volunteer-btn"]}> Submit </button>
+            <button className={styles["volunteer-btn"]}>
+              {" "}
+              Volunteer{" "}
+              <span className={styles["btn-span"]}>
+                {" "}
+                <Image
+                  src="/love_white.svg"
+                  alt="love_icon"
+                  width={20}
+                  height={20}
+                />{" "}
+              </span>{" "}
+            </button>
           </form>
         </div>
       </div>
