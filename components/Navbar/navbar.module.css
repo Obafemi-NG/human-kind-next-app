@@ -73,6 +73,10 @@
   border: 1px solid #5aee55;
 }
 
+.active {
+  color: #5aee55;
+}
+
 @media screen and (max-width: 480px) {
   .nav-links {
     display: none;
