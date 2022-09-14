@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  width: 151px;
 }
 .logo-text {
   margin-right: 8px;

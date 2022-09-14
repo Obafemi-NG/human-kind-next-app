@@ -5,7 +5,7 @@ import CarouselCard from "../../components/CarouselCard";
 // Image import
 import beneficiary from "../../public/beneficiary.png";
 import sme from "../../public/sme.png";
-import solar from "../../public/solar.png";
+import solar from "../../public/solar-borehole.png";
 import CarouselScroll from "../../components/CarouselScroll";
 import Image from "next/image";
 

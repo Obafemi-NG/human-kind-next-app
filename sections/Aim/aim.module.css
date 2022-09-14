@@ -33,6 +33,12 @@
   background-color: #f3fff3;
   margin-bottom: 20px;
   border-radius: 25px;
+  border: 1px solid #f3fff3;
+}
+.aim-card:hover {
+  background-color: #e6ffe0;
+  cursor: default;
+  border: 1px solid #5aee55;
 }
 .point {
   font-family: "Archivo", sans-serif;

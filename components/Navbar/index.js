@@ -3,12 +3,17 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 import { useState } from "react";
 import { useRouter } from "next/router";
+import logo from "../../public/logo.png";
 
 const Navbar = () => {
   const router = useRouter();
   const [navMenu, setNavMenu] = useState(false);
+  const [projectDisplay, setProjectDisplay] = useState(false);
   const toggleNavbar = () => {
     setNavMenu(!navMenu);
+  };
+  const toggleProject = () => {
+    setProjectDisplay(!projectDisplay);
   };
   return (
     <>
@@ -16,20 +21,7 @@ const Navbar = () => {
         <Link href="/">
           <a>
             <div className={styles["logo-container"]}>
-              <div className={styles["logo-text"]}>
-                <h3 className={styles["logo-text-title"]}>HumanKind</h3>
-                <p className={styles["logo-text-subtitle"]}>
-                  Foundation Global
-                </p>
-              </div>
-              <div className={styles["logo-icon"]}>
-                <Image
-                  src="/humanKindLogo.svg"
-                  alt="logo-icon"
-                  width={32}
-                  height={32}
-                />
-              </div>
+              <Image src={logo} alt="Humankind_logo" />
             </div>
           </a>
         </Link>
@@ -60,18 +52,30 @@ const Navbar = () => {
               </a>
             </Link>{" "}
           </li>
-          <li className={styles["nav-link"]}>
+          <li onClick={toggleProject} className={styles["nav-link"]}>
             {" "}
-            Projects{" "}
-            <span>
-              {" "}
+            <span
+              className={
+                projectDisplay == true ? `${styles["project-active"]}` : ""
+              }
+            >
+              Projects
+            </span>
+            {projectDisplay ? (
+              <Image
+                src="/dropup_btn.svg"
+                alt="dropdown_icon"
+                width={20}
+                height={20}
+              />
+            ) : (
               <Image
                 src="/dropdown_btn.svg"
                 alt="dropdown_icon"
                 width={20}
                 height={20}
-              />{" "}
-            </span>{" "}
+              />
+            )}
           </li>
           <li className={styles["nav-link"]}>
             {" "}
@@ -85,8 +89,30 @@ const Navbar = () => {
               </a>
             </Link>{" "}
           </li>
-          <li className={styles["nav-link"]}> Events </li>
-          <li className={styles["nav-link"]}> Blog </li>
+          <li className={styles["nav-link"]}>
+            {" "}
+            <Link href="/events">
+              <a
+                className={
+                  router.pathname == "/events" ? `${styles["active"]}` : ""
+                }
+              >
+                Events
+              </a>
+            </Link>{" "}
+          </li>
+          <li className={styles["nav-link"]}>
+            {" "}
+            <Link href="/blog-posts">
+              <a
+                className={
+                  router.pathname == "/blog-posts" ? `${styles["active"]}` : ""
+                }
+              >
+                Blog
+              </a>
+            </Link>{" "}
+          </li>
         </ul>
         <Link href="donate">
           <a>
@@ -115,6 +141,24 @@ const Navbar = () => {
           )}{" "}
         </div>
       </div>
+      {projectDisplay && (
+        <div className={styles["projects-container"]}>
+          <ul>
+            <li className={styles["project-list"]}>
+              {" "}
+              <Link href="/projects/solar-borehole">
+                <a>Solar Boreholes</a>
+              </Link>{" "}
+            </li>
+            <li className={styles["project-list"]}>
+              {" "}
+              <Link href="/projects/empowerment-project">
+                <a>Empowerment Projects</a>
+              </Link>{" "}
+            </li>
+          </ul>
+        </div>
+      )}
 
       {navMenu && (
         <div className={styles["navbar-dropDown"]}>
@@ -171,8 +215,32 @@ const Navbar = () => {
                 </a>
               </Link>{" "}
             </li>
-            <li className={styles["nav-link"]}> Events </li>
-            <li className={styles["nav-link"]}> Blog </li>
+            <li className={styles["nav-link"]}>
+              {" "}
+              <Link href="/events">
+                <a
+                  className={
+                    router.pathname == "/events" ? `${styles["active"]}` : ""
+                  }
+                >
+                  Events
+                </a>
+              </Link>{" "}
+            </li>
+            <li className={styles["nav-link"]}>
+              {" "}
+              <Link href="/blog-posts">
+                <a
+                  className={
+                    router.pathname == "/blog-posts"
+                      ? `${styles["active"]}`
+                      : ""
+                  }
+                >
+                  Blog
+                </a>
+              </Link>{" "}
+            </li>
           </ul>
           <div>
             <Link href="donate">

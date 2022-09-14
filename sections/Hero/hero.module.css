@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f3fff3;
   padding: 120px 50px 81px 50px;
 }
 .left-illus {
   margin-top: 100px;
+  width: 202px;
 }
 .center-illus {
   width: 700px;
@@ -19,6 +19,7 @@
 }
 .right-illus {
   margin-top: -100px;
+  width: 202px;
 }
 .hero-title {
   font-family: "Ambit", sans-serif;
@@ -58,7 +59,7 @@
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   padding: 15px 30px;
   color: white;
   background-color: #5aee55;
@@ -84,9 +85,9 @@
   font-family: "Archivo", sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 22px;
-  padding: 14px 20px;
+  padding: 10px 20px;
   border-radius: 40px;
   border: 1px solid transparent;
   transition: all 0.6s;
@@ -143,7 +144,12 @@
   .hero-donate-btn,
   .hero-volunteer-btn {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .volunteer-icon {
+    width: 16px;
+    display: flex;
+    align-items: center;
   }
   .hero-subtitle {
     font-family: "Archivo";

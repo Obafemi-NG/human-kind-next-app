@@ -1,0 +1,39 @@
+.page-content {
+  padding-top: 177px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: auto;
+}
+.image-container {
+  width: 240px;
+}
+
+.title {
+  font-family: "Ambit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  color: #023003;
+  margin-top: 40px;
+}
+.oops {
+  color: #5aee55;
+}
+.sub-title {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 20px;
+  color: #023003;
+}
+.link {
+  color: #5aee55;
+}

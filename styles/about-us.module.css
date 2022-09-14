@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 480px) {
   .page-content {
-    padding: 100px 20px;
+    padding: 100px 20px 50px 20px;
   }
   .header {
     font-size: 40px;
@@ -144,6 +144,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .about-us-text,
+  .founder-remark {
+    text-align: left;
   }
 }
 

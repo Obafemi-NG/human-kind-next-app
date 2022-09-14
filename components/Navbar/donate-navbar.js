@@ -2,29 +2,22 @@ import Image from "next/image";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/router";
+import logo from "../../public/logo.png";
 
 const DonateNavbar = () => {
   const [navMenu, setNavMenu] = useState(false);
+  const router = useRouter();
+  const toggleNavMenu = () => {
+    setNavMenu(!navMenu);
+  };
   return (
     <>
       <div className={styles["navbar-container"]}>
         <Link href="/">
           <a>
             <div className={styles["logo-container"]}>
-              <div className={styles["logo-text"]}>
-                <h3 className={styles["logo-text-title"]}>HumanKind</h3>
-                <p className={styles["logo-text-subtitle"]}>
-                  Foundation Global
-                </p>
-              </div>
-              <div className={styles["logo-icon"]}>
-                <Image
-                  src="/humanKindLogo.svg"
-                  alt="logo-icon"
-                  width={32}
-                  height={32}
-                />
-              </div>
+              <Image src={logo} alt="Humankind_logo" />
             </div>
           </a>
         </Link>
@@ -64,12 +57,27 @@ const DonateNavbar = () => {
           <li className={styles["nav-link"]}> Blog </li>
         </ul>
         <div className={styles["hamburger-btn"]}>
-          <Image
-            src="/hamburger-btn.svg"
-            alt="hamburger-btn"
-            width={32}
-            height={32}
-          />
+          {navMenu ? (
+            <div onClick={toggleNavMenu}>
+              {" "}
+              <Image
+                src="/close.svg"
+                alt="hamburger-btn"
+                width={32}
+                height={32}
+              />{" "}
+            </div>
+          ) : (
+            <div onClick={toggleNavMenu}>
+              {" "}
+              <Image
+                src="/hamburger-btn.svg"
+                alt="hamburger-btn"
+                width={32}
+                height={32}
+              />{" "}
+            </div>
+          )}
         </div>
       </div>
 
@@ -79,13 +87,26 @@ const DonateNavbar = () => {
             <li className={styles["nav-link"]}>
               {" "}
               <Link href="/about-us">
-                <a> About Us</a>
+                <a
+                  className={
+                    router.pathname == "/about-us" ? `${styles["active"]}` : ""
+                  }
+                >
+                  {" "}
+                  About Us
+                </a>
               </Link>{" "}
             </li>
             <li className={styles["nav-link"]}>
               {" "}
               <Link href="/volunteer">
-                <a>Volunteer</a>
+                <a
+                  className={
+                    router.pathname == "/volunteer" ? `${styles["active"]}` : ""
+                  }
+                >
+                  Volunteer
+                </a>
               </Link>{" "}
             </li>
             <li className={styles["nav-link"]}>
@@ -104,7 +125,15 @@ const DonateNavbar = () => {
             <li className={styles["nav-link"]}>
               {" "}
               <Link href="/contact-us">
-                <a>Contact Us</a>
+                <a
+                  className={
+                    router.pathname == "/contact-us"
+                      ? `${styles["active"]}`
+                      : ""
+                  }
+                >
+                  Contact Us
+                </a>
               </Link>{" "}
             </li>
             <li className={styles["nav-link"]}> Events </li>
@@ -114,7 +143,17 @@ const DonateNavbar = () => {
             <Link href="donate">
               <a>
                 <button className={styles["mobile-nav-btn"]}>
-                  Monetary Donation
+                  {" "}
+                  Monetary donation{" "}
+                  <span>
+                    {" "}
+                    <Image
+                      src="/monetary_icon.svg"
+                      alt="monetary_icon"
+                      width={24}
+                      height={24}
+                    />{" "}
+                  </span>
                 </button>{" "}
               </a>
             </Link>

@@ -1,24 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./footer.module.css";
+import logo from "../../public/logo.png";
 
 const Footer = () => {
   return (
     <div className={styles["footer-container"]}>
       <div className={styles["about-section"]}>
         <div className={styles["logo-container"]}>
-          <div className={styles["logo-text"]}>
-            <h3 className={styles["logo-text-title"]}>HumanKind</h3>
-            <p className={styles["logo-text-subtitle"]}>Foundation Global</p>
-          </div>
-          <div className={styles["logo-icon"]}>
-            <Image
-              src="/humanKindLogo.svg"
-              alt="logo-icon"
-              width={32}
-              height={32}
-            />
-          </div>
+          <Image src={logo} alt="Humankind_logo" />
         </div>
         <div className={styles["descriptive-text"]}>
           At humankind our efforts are channeled towards improving living
