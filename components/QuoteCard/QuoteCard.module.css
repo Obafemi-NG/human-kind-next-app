@@ -40,3 +40,17 @@
   color: #023003;
   margin-left: 10px;
 }
+
+@media screen and (max-width: 480px) {
+  .quote-card-container {
+    width: 320px;
+  }
+  .quote-content {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .quote-author {
+    font-size: 13px;
+    line-height: 14px;
+  }
+}

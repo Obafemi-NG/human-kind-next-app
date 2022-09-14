@@ -35,7 +35,6 @@
   .carousel-section-container {
     margin: auto;
     padding: 20px;
-    /* background-color: red; */
   }
   .carousel-cards-container {
     display: none;
@@ -56,7 +55,7 @@
 }
 
 @media screen and (min-width: 480px) {
-  .mobile-carouseld-cards-container {
+  .mobile-carousel-cards-container {
     display: none;
   }
 }

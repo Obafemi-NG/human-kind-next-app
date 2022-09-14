@@ -1,0 +1,95 @@
+.page-content {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: flex;
+  width: 500px;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.image-container {
+  width: 256px;
+}
+.title {
+  font-family: "Ambit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 74px;
+  text-align: center;
+  color: #023003;
+  margin-top: 40px;
+}
+.event-span {
+  color: #5aee55;
+}
+.sub-title {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  color: #023003;
+  margin-top: 10px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.input {
+  border-radius: 25px;
+  height: 52px;
+  padding: 15px;
+  outline: none;
+  border: 2px solid #5aee55;
+  margin-top: 5px;
+  font-size: 18px;
+  color: #023003;
+}
+.input::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
+.subscribe-btn {
+  background: #5aee55;
+  border-radius: 25px;
+  padding: 15px 20px;
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  color: #f3fff3;
+  border: none;
+  margin-top: 10px;
+  border: 1px solid #5aee55;
+}
+.subscribe-btn:hover {
+  cursor: pointer;
+  background: #e6ffe0;
+  color: #5aee55;
+  border: 1px solid #5aee55;
+}
+
+@media screen and (max-width: 480px) {
+  .page-content {
+    width: 100%;
+    padding: 120px 20px 50px 20px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .sub-title {
+    font-size: 14px;
+  }
+  .subscribe-btn {
+    font-size: 14px;
+  }
+}

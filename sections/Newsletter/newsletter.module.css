@@ -70,9 +70,13 @@
   color: #f3fff3;
   border: none;
   margin-top: 10px;
+  border: 1px solid #5aee55;
 }
 .newsletter-btn:hover {
   cursor: pointer;
+  background: #e6ffe0;
+  color: #5aee55;
+  border: 1px solid #5aee55;
 }
 
 @media screen and (max-width: 480px) {
