@@ -97,6 +97,13 @@
   .nav-links {
     display: none;
   }
+  .nav-sub-link {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Archivo", sans-serif;
+    line-height: 22px;
+  }
   .nav-btn {
     display: none;
   }
@@ -113,7 +120,7 @@
     background-color: #f3fff3;
     height: 100%;
     width: 100%;
-    z-index: 20;
+    z-index: 60;
     padding: 0px 20px;
     top: 68px;
     position: fixed;
@@ -149,7 +156,7 @@
     display: flex;
     align-items: center;
     line-height: 16px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .socials-container {
     margin-top: 40px;
@@ -159,7 +166,7 @@
     margin-right: 15px;
   }
   .mobile-navbar-text {
-    margin-top: 40px;
+    margin-top: 30px;
     font-family: "Archivo", sans-serif;
     font-style: normal;
     font-weight: 400;

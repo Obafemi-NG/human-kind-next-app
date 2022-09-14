@@ -188,19 +188,63 @@ const Navbar = () => {
                 </a>
               </Link>{" "}
             </li>
-            <li className={styles["nav-link"]}>
+            <li onClick={toggleProject} className={styles["nav-link"]}>
               {" "}
-              Projects{" "}
-              <span>
-                {" "}
+              <span
+                className={
+                  projectDisplay == true ? `${styles["project-active"]}` : ""
+                }
+              >
+                Projects
+              </span>
+              {projectDisplay ? (
+                <Image
+                  src="/dropup_btn.svg"
+                  alt="dropdown_icon"
+                  width={20}
+                  height={20}
+                />
+              ) : (
                 <Image
                   src="/dropdown_btn.svg"
                   alt="dropdown_icon"
                   width={20}
                   height={20}
-                />{" "}
-              </span>{" "}
+                />
+              )}
             </li>
+            {projectDisplay && (
+              <li className={styles["nav-sub-link"]}>
+                {" "}
+                <Link href="/projects/solar-borehole">
+                  <a
+                    className={
+                      router.pathname == "/projects/solar-borehole"
+                        ? `${styles["active"]}`
+                        : ""
+                    }
+                  >
+                    Solar Borehole
+                  </a>
+                </Link>{" "}
+              </li>
+            )}
+            {projectDisplay && (
+              <li className={styles["nav-sub-link"]}>
+                {" "}
+                <Link href="/projects/empowerment-project">
+                  <a
+                    className={
+                      router.pathname == "/projects/empowerment-project"
+                        ? `${styles["active"]}`
+                        : ""
+                    }
+                  >
+                    Empowerment Projects
+                  </a>
+                </Link>{" "}
+              </li>
+            )}
             <li className={styles["nav-link"]}>
               {" "}
               <Link href="/contact-us">

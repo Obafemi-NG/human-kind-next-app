@@ -22,9 +22,9 @@ const CarouselCard = ({
           <p className={styles.subtitle}> {subTitle} </p>
           <p className={styles.content}> {content} </p>
           {learnMore && (
-            <Link href={url}>
-              <a>
-                <button className={styles["learn-btn"]}>
+            <button className={styles["learn-btn"]}>
+              <Link href={url}>
+                <a>
                   {" "}
                   Learn more{" "}
                   <span className={styles["learn-more-icon"]}>
@@ -36,9 +36,9 @@ const CarouselCard = ({
                       height={12}
                     />{" "}
                   </span>{" "}
-                </button>
-              </a>
-            </Link>
+                </a>
+              </Link>
+            </button>
           )}
         </div>
       </div>
