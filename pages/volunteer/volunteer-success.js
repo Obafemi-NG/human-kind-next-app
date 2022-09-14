@@ -3,11 +3,13 @@ import styles from "../../styles/volunteer-success.module.css";
 import SuccessImage from "../../public/amico.png";
 import Image from "next/image";
 import Footer from "../../sections/Footer";
+import ScrollUp from "../../components/scrollUp";
 
 const VolunteerSuccess = () => {
   return (
     <div className={styles["volunteer-success-container"]}>
       <Navbar />
+      <ScrollUp />
       <div className={styles["page-content"]}>
         <p className={styles["page-title"]}>
           {" "}

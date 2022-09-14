@@ -3,6 +3,7 @@ import Footer from "../../sections/Footer";
 import styles from "../../styles/events.module.css";
 import rafiki from "../../public/rafiki.png";
 import Image from "next/image";
+import ScrollUp from "../../components/scrollUp";
 
 const Events = () => {
   return (
@@ -30,6 +31,7 @@ const Events = () => {
           <button className={styles["subscribe-btn"]}> Subscribe </button>
         </form>
       </div>
+      <ScrollUp />
       <Footer />
     </>
   );

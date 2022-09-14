@@ -4,6 +4,7 @@ import Image from "next/image";
 import donateImage from "../../public/donate_image.png";
 import DonateNavbar from "../../components/Navbar/donate-navbar";
 import mobileDonateImage from "../../public/mobile-donate-image.png";
+import ScrollUp from "../../components/scrollUp";
 
 const Donate = () => {
   return (
@@ -95,6 +96,7 @@ const Donate = () => {
           </div>
         </div>
       </div>
+      <ScrollUp />
       <Footer />
     </div>
   );

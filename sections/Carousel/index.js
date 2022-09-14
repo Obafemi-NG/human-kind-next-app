@@ -19,6 +19,7 @@ const CarouselSection = () => {
         "We aim to provide access to water in communities where drinking water is not readily available to the people. This project is intended to help communities, especially in the rural areas, to overcome challenges relating to water. ",
       imgUrl: solar,
       learnMore: true,
+      url: "/projects/solar-borehole",
     },
     {
       id: "2",
@@ -28,6 +29,7 @@ const CarouselSection = () => {
         "The Humankind Foundation empowerment projects are designed to empower people to acquire the required skill set needed to learn enterprise in the areas of building of solar panels, fashion and design, cosmetics and soap making, and many other crafts for sustainability. ",
       imgUrl: sme,
       learnMore: true,
+      url: "/projects/empowerment-project",
     },
     {
       id: "3",
@@ -47,6 +49,7 @@ const CarouselSection = () => {
       content={data.content}
       imgLink={data.imgUrl}
       learnMore={data.learnMore}
+      url={data.url}
     />
   ));
   return (

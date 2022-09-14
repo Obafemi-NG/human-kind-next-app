@@ -3,6 +3,7 @@ import Footer from "../../sections/Footer";
 import Image from "next/image";
 import styles from "../../styles/empowerment-project.module.css";
 import empowerment from "../../public/empowerment.png";
+import ScrollUp from "../../components/scrollUp";
 
 const EmpowermentProject = () => {
   return (
@@ -64,6 +65,7 @@ const EmpowermentProject = () => {
           <p className={styles["remark-span"]}>Thank you.</p>
         </div>
       </div>
+      <ScrollUp />
       <Footer />
     </>
   );

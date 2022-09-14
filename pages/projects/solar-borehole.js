@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
+import ScrollUp from "../../components/scrollUp";
 import solar from "../../public/solar-page.png";
 import Footer from "../../sections/Footer";
 import styles from "../../styles/solar-borehole.module.css";
@@ -80,6 +81,7 @@ const SolarBorehole = () => {
           </p>
         </div>
       </div>
+      <ScrollUp />
       <Footer />
     </>
   );

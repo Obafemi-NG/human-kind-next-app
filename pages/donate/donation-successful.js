@@ -3,6 +3,7 @@ import Footer from "../../sections/Footer";
 import styles from "../../styles/donation-successful.module.css";
 import Image from "next/image";
 import SuccessImage from "../../public/amico.png";
+import ScrollUp from "../../components/scrollUp";
 
 const DonationSuccessful = () => {
   return (
@@ -28,6 +29,7 @@ const DonationSuccessful = () => {
         Anything else? Read from our{" "}
         <span className={styles["event-btn"]}> blog </span>{" "}
       </p>
+      <ScrollUp />
       <Footer />
     </div>
   );

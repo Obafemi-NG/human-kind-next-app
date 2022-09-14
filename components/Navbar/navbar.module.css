@@ -1,6 +1,5 @@
 /* Navigation bar container */
 .navbar-container {
-  /* background-color: rgba(243, 255, 243, 0.9); */
   opacity: 90%;
   padding: 0px 50px;
   height: 77px;
@@ -107,6 +106,8 @@
     width: 100%;
     position: fixed;
     height: 68px;
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid #5aee55;
   }
   .navbar-dropDown {
     background-color: #f3fff3;
@@ -131,6 +132,9 @@
   .nav-link {
     margin-left: 0;
     margin-bottom: 20px;
+  }
+  .nav-link:hover {
+    border-bottom: none;
   }
   .mobile-nav-btn {
     font-family: "Archivo", sans-serif;
