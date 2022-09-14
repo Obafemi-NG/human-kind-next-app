@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import ScrollUp from "../components/scrollUp";
 import Aim from "../sections/Aim";
 import Attribute from "../sections/Attribute";
 import CarouselSection from "../sections/Carousel";
@@ -19,6 +20,7 @@ export default function Home() {
       </Head>
 
       <Navbar />
+
       <Hero />
       <Quotes />
       <CarouselSection />
@@ -27,6 +29,7 @@ export default function Home() {
       <Volunteer />
       <Newsletter />
       <Footer />
+      <ScrollUp />
     </div>
   );
 }

@@ -3,11 +3,13 @@ import styles from "../../styles/contact-success.module.css";
 import Footer from "../../sections/Footer";
 import SuccessImage from "../../public/amico.png";
 import Image from "next/image";
+import ScrollUp from "../../components/scrollUp";
 
 const ContactSuccess = () => {
   return (
     <div className={styles["contact-success-container"]}>
       <Navbar />
+      <ScrollUp />
       <div className={styles["page-content"]}>
         <p className={styles["page-title"]}>
           {" "}

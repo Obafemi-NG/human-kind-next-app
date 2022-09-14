@@ -4,6 +4,7 @@ import Image from "next/image";
 import Footer from "../../sections/Footer";
 import contactUsImage from "../../public/contact-us.png";
 import mobileContactUsImage from "../../public/mobile-contact-us.png";
+import ScrollUp from "../../components/scrollUp";
 
 const ContactUs = () => {
   return (
@@ -81,6 +82,7 @@ const ContactUs = () => {
         </p>
         <p className={styles.email}> hfglobal@humankindorg.com </p>
       </div>
+      <ScrollUp />
       <Footer />
     </div>
   );

@@ -4,6 +4,7 @@ import Footer from "../../sections/Footer";
 import styles from "../../styles/volunteer.module.css";
 import volunteerImage from "../../public/volunteer.png";
 import mobileVolunteerImage from "../../public/mobile-volunteer-image.png";
+import ScrollUp from "../../components/scrollUp";
 
 const Volunteer = () => {
   return (
@@ -98,6 +99,7 @@ const Volunteer = () => {
           </form>
         </div>
       </div>
+      <ScrollUp />
       <Footer />
     </div>
   );

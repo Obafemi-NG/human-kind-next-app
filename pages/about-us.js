@@ -4,6 +4,7 @@ import aboutUsImage from "../public/about-us-image.png";
 import founderImage from "../public/founder.png";
 import Image from "next/image";
 import Footer from "../sections/Footer";
+import ScrollUp from "../components/scrollUp";
 
 const AboutUs = () => {
   return (
@@ -180,6 +181,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
+      <ScrollUp />
       <Footer />
     </div>
   );
