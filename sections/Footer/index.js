@@ -31,8 +31,17 @@ const Footer = () => {
                 <a>Volunteer</a>
               </Link>
             </li>
-            <li className={styles.link}>Events</li>
-            <li className={styles.link}> Blog </li>
+            <li className={styles.link}>
+              <Link href="/events">
+                <a>Events</a>
+              </Link>{" "}
+            </li>
+            <li className={styles.link}>
+              {" "}
+              <Link href="/blog-posts">
+                <a>Blog</a>
+              </Link>{" "}
+            </li>
             <li className={styles.link}>
               {" "}
               <Link href="/contact-us">
@@ -44,8 +53,18 @@ const Footer = () => {
         <div className={styles["right-links"]}>
           <p className={styles["link-title"]}> Projects</p>
           <ul className={styles["footer-projects"]}>
-            <li className={styles.project}> Solar borehole </li>
-            <li className={styles.project}> Empowerment projects </li>
+            <li className={styles.project}>
+              {" "}
+              <Link href="/projects/solar-borehole">
+                <a>Solar Boreholes</a>
+              </Link>{" "}
+            </li>
+            <li className={styles.project}>
+              {" "}
+              <Link href="/projects/empowerment-project">
+                <a>Empowerment Projects</a>
+              </Link>{" "}
+            </li>
           </ul>
         </div>
       </div>
