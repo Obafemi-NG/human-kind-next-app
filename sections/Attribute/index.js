@@ -13,7 +13,7 @@ const Attribute = () => {
     },
     {
       id: 1,
-      hashtag: "#Lightahousehold",
+      hashtag: "#Payaschoolfee",
       content:
         "An empowerment project like this is intended to empower parents to be able to pay for their children’s school fees as they become more economically viable. A support from people for this project will help make this a reality.",
     },
@@ -62,7 +62,7 @@ const Attribute = () => {
         <p className={styles.title}>
           {" "}
           Our attribute <span className={styles["title-span"]}>
-            hashags
+            hashtags
           </span>{" "}
         </p>
         <div className={styles["hashtag-container"]}>

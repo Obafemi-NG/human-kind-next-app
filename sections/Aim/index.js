@@ -21,7 +21,7 @@ const Aim = () => {
     {
       id: 3,
       iconLink: "/aim_icon_3.svg",
-      point: "Impact developmental projects across communities in africa.",
+      point: "Impact developmental projects across communities in Africa.",
     },
     {
       id: 4,
