@@ -61,7 +61,7 @@ const AboutUs = () => {
             their faces.
           </p>
           <p className={styles["remark-span"]}>
-            Our world is getting smaller by the day as we are now become a
+            Our world is getting smaller by the day as we have now become a
             global village. The implication of this is that events and
             happenings in a small community can directly have a serious effect
             on other parts of the world. The developed countries of the world,
@@ -116,7 +116,7 @@ const AboutUs = () => {
             <p className={styles["remark-span"]}>
               The founder of the Humankind Foundation is Femi Okikiola, a
               graduate of B.A History, University of Ilorin (1998). He also had
-              an MBA in Human Relations Management from the Lagos State
+              an MBA in Human Resources Management from the Lagos State
               University (2008). Mr. Femi Okikiola had experience that spanned
               over 15 years, working experience in administration and learning
               from expatriates who were managers and colleagues on his team. In

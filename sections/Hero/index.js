@@ -1,17 +1,16 @@
+// import image-tag for images and svg.
 import Image from "next/image";
 
 // style Module
 import styles from "./hero.module.css";
 
 // imported Images
-import topLeftImage from "../../public/left_1.png";
-import bottomLeftImage from "../../public/left_2.png";
-import topRightImage from "../../public/right_1.png";
-import bottomRightImage from "../../public/right_2.png";
-import centerImage from "../../public/display.png";
+import centerImage from "../../public/display.webp";
+import leftIllustration from "../../public/left-illustration.webp";
+import rightIllustration from "../../public/right-illustration.webp";
+
+// imported link for routing
 import Link from "next/link";
-import leftIllustration from "../../public/left-illustration.png";
-import rightIllustration from "../../public/right-illustration.png";
 
 const Hero = () => {
   return (
@@ -28,10 +27,10 @@ const Hero = () => {
           <Image src="/curved.svg" alt="curved-svg" width={208} height={31} />
         </div>
         <p className={styles["hero-subtitle"]}>
-          Humankind foundation is a non governmental organization that is
-          focused on providing developmental solutions to individuals and
-          communities through green energy. We build strength, stability and
-          self sufficiency to both individuals and under developed or developing
+          Humankind foundation global is a non governmental organization focused
+          on providing developmental solutions to individuals and communities
+          through green energy. We bring strength, stability and self
+          sufficiency to both individuals and under developed or developing
           communities.
         </p>
         <div className={styles["hero-btn"]}>

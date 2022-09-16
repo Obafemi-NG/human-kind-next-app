@@ -29,10 +29,10 @@ const SolarBorehole = () => {
           </p>
           <p className={styles["remark-span"]}>
             A report from UNICEF states that one third of children in Nigeria;
-            do not have access to water. It further states that one out of five
-            children in the world have access to clean water. There are some
-            communities in Nigeria that mostly depend on surface water that may
-            be miles to fetch.
+            do not have access to clean water. It further states that one out of
+            five children in the world have access to clean water. There are
+            some communities in Nigeria that mostly depend on surface water that
+            may be miles to fetch.
           </p>
           <p className={styles["remark-span"]}>
             Peter Hawkins, UNICEF Representative in Nigeria, retorted &ldquo;The

@@ -32,7 +32,7 @@ const EmpowermentProject = () => {
             barely eat two times a day. It has become imperative for the
             international community to know that our communities are in dire
             need of support through empowerment programs. This will be directed
-            toeards addressing the root problems of poverty and bring our people
+            towards addressing the root problems of poverty and bring our people
             back to economic and social stability.
           </p>
           <p className={styles["remark-span"]}>
@@ -52,7 +52,7 @@ const EmpowermentProject = () => {
             After exposing people to these skills, we would be empowering them
             with tools in form of machines: (sewing machines, vulcanizing
             machines, solar power electric outputs, and other support needed to
-            startup on their own.
+            startup on their own).
           </p>
           <p className={styles["remark-span"]}>
             Like we mentioned earlier on, we would be counting on your support
