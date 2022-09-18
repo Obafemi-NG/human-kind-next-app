@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./navbar.module.css";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.webp";
 
 const Navbar = () => {
   const router = useRouter();

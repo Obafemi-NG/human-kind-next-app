@@ -47,8 +47,8 @@ const Hero = () => {
                   <Image
                     src="/volunteerIcon.svg"
                     alt="volunteer-btn"
-                    width={32}
-                    height={32}
+                    width={24}
+                    height={24}
                   />
                 </span>
               </div>

@@ -1,6 +1,6 @@
 import styles from "./attribute.module.css";
 
-import hashtagImage from "../../public/hashtag_image.png";
+import hashtagImage from "../../public/hashtag_image.webp";
 import Image from "next/image";
 
 const Attribute = () => {

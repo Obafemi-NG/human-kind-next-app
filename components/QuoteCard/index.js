@@ -2,14 +2,14 @@ import Image from "next/image";
 import styles from "./QuoteCard.module.css";
 import { useState, useCallback, useEffect } from "react";
 
-import img_1 from "../../public/img_1.png";
-import img_2 from "../../public/img_2.png";
-import img_3 from "../../public/img_3.png";
-import img_4 from "../../public/img_4.png";
-import img_5 from "../../public/img_5.png";
-import img_6 from "../../public/img_6.png";
-import img_7 from "../../public/img_7.png";
-import img_8 from "../../public/img_8.png";
+import img_1 from "../../public/img_1.webp";
+import img_2 from "../../public/img_2.webp";
+import img_3 from "../../public/img_3.webp";
+import img_4 from "../../public/img_4.webp";
+import img_5 from "../../public/img_5.webp";
+import img_6 from "../../public/img_6.webp";
+import img_7 from "../../public/img_7.webp";
+import img_8 from "../../public/img_8.webp";
 
 const QuoteCard = () => {
   const [quote, setQuote] = useState({});

@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../sections/Footer";
 import styles from "../styles/404.module.css";
-import notFound from "../public/not-found.png";
+import notFound from "../public/not-found.webp";
 import Image from "next/image";
 import Link from "next/link";
 

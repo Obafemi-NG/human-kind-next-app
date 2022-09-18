@@ -3,9 +3,9 @@ import styles from "./carousel.module.css";
 import CarouselCard from "../../components/CarouselCard";
 
 // Image import
-import beneficiary from "../../public/beneficiary.png";
-import sme from "../../public/sme.png";
-import solar from "../../public/solar-borehole.png";
+import beneficiary from "../../public/beneficiary.webp";
+import sme from "../../public/sme.webp";
+import solar from "../../public/solar-borehole.webp";
 import CarouselScroll from "../../components/CarouselScroll";
 import Image from "next/image";
 

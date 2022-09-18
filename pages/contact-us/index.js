@@ -2,8 +2,8 @@ import Navbar from "../../components/Navbar";
 import styles from "../../styles/contact-us.module.css";
 import Image from "next/image";
 import Footer from "../../sections/Footer";
-import contactUsImage from "../../public/contact-us.png";
-import mobileContactUsImage from "../../public/mobile-contact-us.png";
+import contactUsImage from "../../public/contact-us.webp";
+import mobileContactUsImage from "../../public/mobile-contact-us.webp";
 import ScrollUp from "../../components/scrollUp";
 
 const ContactUs = () => {

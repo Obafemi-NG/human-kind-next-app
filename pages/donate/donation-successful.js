@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../sections/Footer";
 import styles from "../../styles/donation-successful.module.css";
 import Image from "next/image";
-import SuccessImage from "../../public/amico.png";
+import SuccessImage from "../../public/amico.webp";
 import ScrollUp from "../../components/scrollUp";
 
 const DonationSuccessful = () => {
