@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar";
 import styles from "../../styles/volunteer-success.module.css";
-import SuccessImage from "../../public/amico.png";
+import SuccessImage from "../../public/amico.webp";
 import Image from "next/image";
 import Footer from "../../sections/Footer";
 import ScrollUp from "../../components/scrollUp";

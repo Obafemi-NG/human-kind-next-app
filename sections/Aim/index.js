@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./aim.module.css";
 
-import aimImage from "../../public/aim-image.png";
+import aimImage from "../../public/aim-image.webp";
 
 const Aim = () => {
   const aimPoints = [

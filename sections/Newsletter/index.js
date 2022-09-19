@@ -1,7 +1,7 @@
 import styles from "./newsletter.module.css";
 
-import newsletterImage from "../../public/newsletter_image.png";
-import mobileNewsletterImage from "../../public/mobile-newsletter-img.png";
+import newsletterImage from "../../public/newsletter_image.webp";
+import mobileNewsletterImage from "../../public/mobile-newsletter-img.webp";
 import Image from "next/image";
 
 const Newsletter = () => {

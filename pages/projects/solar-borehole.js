@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import ScrollUp from "../../components/scrollUp";
-import solar from "../../public/solar-page.png";
+import solar from "../../public/solar-page.webp";
 import Footer from "../../sections/Footer";
 import styles from "../../styles/solar-borehole.module.css";
 

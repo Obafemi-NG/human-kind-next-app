@@ -2,8 +2,8 @@ import Image from "next/image";
 import Navbar from "../../components/Navbar";
 import Footer from "../../sections/Footer";
 import styles from "../../styles/volunteer.module.css";
-import volunteerImage from "../../public/volunteer.png";
-import mobileVolunteerImage from "../../public/mobile-volunteer-image.png";
+import volunteerImage from "../../public/volunteer.webp";
+import mobileVolunteerImage from "../../public/mobile-volunteer-image.webp";
 import ScrollUp from "../../components/scrollUp";
 
 const Volunteer = () => {

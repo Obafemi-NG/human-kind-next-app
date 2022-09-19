@@ -3,7 +3,7 @@ import styles from "./navbar.module.css";
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/router";
-import logo from "../../public/logo.png";
+import logo from "../../public/logo.webp";
 
 const DonateNavbar = () => {
   const [navMenu, setNavMenu] = useState(false);

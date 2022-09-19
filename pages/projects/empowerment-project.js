@@ -2,7 +2,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../sections/Footer";
 import Image from "next/image";
 import styles from "../../styles/empowerment-project.module.css";
-import empowerment from "../../public/empowerment.png";
+import empowerment from "../../public/empowerment.webp";
 import ScrollUp from "../../components/scrollUp";
 
 const EmpowermentProject = () => {

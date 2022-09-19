@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./volunteer.module.css";
 
-import volunteerImage from "../../public/volunteer.png";
-import mobileVolunteerImage from "../../public/mobile-volunteer-img.png";
+import volunteerImage from "../../public/volunteer.webp";
+import mobileVolunteerImage from "../../public/mobile-volunteer-img.webp";
 
 const Volunteer = () => {
   return (

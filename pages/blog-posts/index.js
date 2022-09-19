@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar";
 import Footer from "../../sections/Footer";
 import styles from "../../styles/blog-posts.module.css";
-import rafiki from "../../public/rafiki.png";
+import rafiki from "../../public/rafiki.webp";
 import Image from "next/image";
 
 const BlogPosts = () => {

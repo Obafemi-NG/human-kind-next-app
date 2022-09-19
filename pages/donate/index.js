@@ -1,9 +1,9 @@
 import styles from "../../styles/donate.module.css";
 import Footer from "../../sections/Footer";
 import Image from "next/image";
-import donateImage from "../../public/donate_image.png";
+import donateImage from "../../public/donate_image.webp";
 import DonateNavbar from "../../components/Navbar/donate-navbar";
-import mobileDonateImage from "../../public/mobile-donate-image.png";
+import mobileDonateImage from "../../public/mobile-donate-image.webp";
 import ScrollUp from "../../components/scrollUp";
 
 const Donate = () => {
