@@ -114,7 +114,7 @@ const Navbar = () => {
             </Link>{" "}
           </li>
         </ul>
-        <Link href="donate">
+        <Link href="/donate">
           <a>
             <button className={styles["nav-btn"]}>Donate now</button>{" "}
           </a>

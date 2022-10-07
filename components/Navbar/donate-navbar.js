@@ -137,7 +137,7 @@ const DonateNavbar = () => {
         </div>
       </div>
       {projectDisplay && (
-        <div className={styles["projects-container"]}>
+        <div className={styles["donate-projects-container"]}>
           <ul>
             <li className={styles["project-list"]}>
               {" "}
