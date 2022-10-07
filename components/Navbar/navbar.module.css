@@ -79,6 +79,17 @@
   border-radius: 8px;
   background-color: #f3fff3;
 }
+.donate-projects-container {
+  position: fixed;
+  z-index: 50;
+  left: 60%;
+  top: 77px;
+  width: 240px;
+  border: 1px solid #5aee55;
+  box-shadow: 0px 12px 16px -4px rgba(53, 53, 53, 0.05);
+  border-radius: 8px;
+  background-color: #f3fff3;
+}
 .project-list {
   list-style: none;
   font-family: "Archivo", sans-serif;
