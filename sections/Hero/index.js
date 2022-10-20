@@ -21,26 +21,26 @@ const Hero = () => {
       <div className={styles["center-illus"]}>
         <h1 className={styles["hero-title"]}>
           <span className={styles.highlight}>HumanKind</span>
-          <span className={styles.global}>Foundation Global</span>
+          <span className={styles.global}>Foundation</span>
         </h1>
         <div className={styles["icon-container"]}>
           <Image src="/curved.svg" alt="curved-svg" width={208} height={31} />
         </div>
         <p className={styles["hero-subtitle"]}>
-          Humankind foundation global is a non governmental organization focused
-          on providing developmental solutions to individuals and communities
+          Humankind foundation is a non governmental organization focused on
+          providing developmental solutions to individuals and communities
           through green energy. We bring strength, stability and self
           sufficiency to both individuals and under developed or developing
           communities.
         </p>
         <div className={styles["hero-btn"]}>
           <Link href="/donate">
-            <a passHref>
+            <a>
               <button className={styles["hero-donate-btn"]}>Donate now</button>
             </a>
           </Link>
           <Link href="/volunteer">
-            <a passHref>
+            <a>
               <div className={styles["hero-volunteer-btn"]}>
                 <p className={styles.volunteer}>Volunteer</p>
                 <span className={styles["volunteer-icon"]}>

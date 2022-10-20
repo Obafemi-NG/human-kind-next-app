@@ -12,7 +12,7 @@ import Image from "next/image";
 const CarouselSection = () => {
   const carouselData = [
     {
-      id: "1",
+      id: 1,
       title: "Solar Boreholes",
       subTitle: "",
       content:
@@ -22,7 +22,7 @@ const CarouselSection = () => {
       url: "/projects/solar-borehole",
     },
     {
-      id: "2",
+      id: 2,
       title: "Empowerment Projects",
       subTitle: "(SME’s and Skill Acquisitions)",
       content:
@@ -32,11 +32,11 @@ const CarouselSection = () => {
       url: "/projects/empowerment-project",
     },
     {
-      id: "3",
+      id: 3,
       title: "Beneficiaries Experience",
       subTitle: "",
       content:
-        "We intend to mentor and monitor the progress of beneficiaries of this project. We would be visiting communities and people to know what progress they have made and to know what challenges they may be facing. People will be expected to share their experiences as well.",
+        "We intend to mentor and monitor the progress of beneficiaries of these project. We would be visiting communities and people to know what progress they have made and to know what challenges they may be facing. People will be expected to share their experiences as well.",
       imgUrl: beneficiary,
       learnMore: false,
     },

@@ -54,13 +54,6 @@ const AboutUs = () => {
             </li>
           </ul>
           <p className={styles["remark-span"]}>
-            The driving force behind this mission is to help create awareness on
-            the plight of the people in communities across Africa and beyond and
-            to solicit for support from the global community to help alleviate
-            the suffering of people in these communities and bring smile to
-            their faces.
-          </p>
-          <p className={styles["remark-span"]}>
             Our world is getting smaller by the day as we have now become a
             global village. The implication of this is that events and
             happenings in a small community can directly have a serious effect
@@ -108,7 +101,7 @@ const AboutUs = () => {
             <div className={styles["chairman"]}>
               <p className={styles.name}> Femi Okikiola </p>
               <p className={styles.position}> Chairman, Board of Trustees </p>
-              <p className={styles.firm}> HumanKind Foundation Global </p>
+              <p className={styles.firm}> HumanKind Foundation </p>
             </div>
           </div>
           <hr className={styles["horizontal-line"]} />
@@ -130,19 +123,8 @@ const AboutUs = () => {
               His passion for people was developed in his early days as a young
               man. Mr. Femi feels moved by the lack in his community. He
               sometimes questions the system on why many people lived a life of
-              scarcity, while some lived in abundance. For instance, he started
-              using an inverter system in year 2001. He was so excited about
-              this as this will help to backup the electric system at home and
-              cut cost on fuel. He indeed was able to save a lot of money from
-              this as his expenses on fuel cut down drastically. However, his
-              perception on this completely changed on one occasion. During this
-              period, the electric power authority has been erratic with power.
-              He was happy that he had backup power and was yet spending less on
-              fuel. However, the moment he looked through the window and saw the
-              darkness in the whole community, his countenance changed. He felt
-              the inadequacy of others living in the dark and questioned the
-              conscience of those who think otherwise. He is fond of approaching
-              people that he felt needed support and giving out a token, every
+              scarcity, while some lived in abundance. He is fond of approaching
+              people who he felt needed support and giving out a token, every
               time he is on the streets. He had mentored people who have risen
               to build great careers in life. One of them was Samuel, a steward
               whom he encouraged to continue his education. Samuel is today a
@@ -155,8 +137,8 @@ const AboutUs = () => {
               mentorship, integrity, stewardship, management, team work etc. He
               has learnt to be a voice for his people reaching out to a global
               audience on his LinkedIn platform. He has written to address world
-              leaders on the refugee crisis, their ordeal and on the steps to
-              take.
+              leaders on the refugee crisis, their ordeal and solution to this
+              problem.
             </p>
             <p className={styles["remark-span"]}>
               Mr. Femi has so much passion for people and “he believes that he
