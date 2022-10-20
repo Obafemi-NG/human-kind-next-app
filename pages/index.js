@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>HumanKind Foundation Global</title>
+        <title>HumanKind Foundation</title>
         <meta
           name="description"
-          content="Humankind foundation global is a non governmental organization focused on providing developmental solutions to individuals and communities through green energy"
+          content="Humankind foundation is a non governmental organization focused on providing developmental solutions to individuals and communities through green energy"
         />
       </Head>
 

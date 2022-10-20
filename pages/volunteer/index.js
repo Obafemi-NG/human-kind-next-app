@@ -6,7 +6,25 @@ import volunteerImage from "../../public/volunteer.webp";
 import mobileVolunteerImage from "../../public/mobile-volunteer-image.webp";
 import ScrollUp from "../../components/scrollUp";
 
+import { useState } from "react";
+
 const Volunteer = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+    location: "",
+  });
+  const handleChange = (e) => {
+    const [name, value] = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className={styles["volunteer-page-container"]}>
       <Navbar />
@@ -45,7 +63,7 @@ const Volunteer = () => {
           <p className={styles["fill-form"]}>
             Fill this form to become a volunteer. 👇
           </p>
-          <form className={styles["form-container"]}>
+          <form className={styles["form-container"]} onSubmit={handleSubmit}>
             <div className={styles["input-label-container"]}>
               <label className={styles.label}>Fullname</label>
               <input
@@ -53,6 +71,8 @@ const Volunteer = () => {
                 type="text"
                 name="fullName"
                 placeholder="John Doe"
+                onChange={handleChange}
+                value={formData.fullName}
               />
             </div>
             <div className={styles["input-label-container"]}>
@@ -61,7 +81,9 @@ const Volunteer = () => {
                 className={styles.input}
                 type="email"
                 name="email"
+                onChange={handleChange}
                 placeholder="john_doe@gmail.com"
+                value={formData.email}
               />
             </div>
             <div className={styles["input-label-container"]}>
@@ -70,14 +92,18 @@ const Volunteer = () => {
                 className={styles.input}
                 type="text"
                 name="location"
+                onChange={handleChange}
                 placeholder="Lagos, Nigeria"
+                value={formData.location}
               />
             </div>
             <div className={styles["input-label-container"]}>
               <label className={styles.label}>Reason</label>
               <textarea
                 type="text"
+                value={formData.message}
                 name="reason"
+                onChange={handleChange}
                 placeholder="Tell us why you are interested in being a volunteer..."
                 className={styles["text-area"]}
                 rows={7}

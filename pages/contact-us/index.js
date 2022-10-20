@@ -6,7 +6,24 @@ import contactUsImage from "../../public/contact-us.webp";
 import mobileContactUsImage from "../../public/mobile-contact-us.webp";
 import ScrollUp from "../../components/scrollUp";
 
+import { useState } from "react";
+
 const ContactUs = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const [name, value] = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className={styles["contact-us-container"]}>
       <Navbar />
@@ -31,13 +48,15 @@ const ContactUs = () => {
           <p className={styles["tell-us"]}>
             Tell us what&rsquo;s on your mind. 👇
           </p>
-          <form className={styles["form-container"]}>
+          <form className={styles["form-container"]} onSubmit={handleSubmit}>
             <div className={styles["input-label-container"]}>
               <label className={styles.label}>Name</label>
               <input
                 className={styles.input}
                 type="text"
                 name="fullName"
+                onChange={handleChange}
+                value={formData.fullName}
                 placeholder="John Doe"
               />
             </div>
@@ -47,6 +66,8 @@ const ContactUs = () => {
                 className={styles.input}
                 type="email"
                 name="email"
+                onChange={handleChange}
+                value={formData.email}
                 placeholder="john_doe@gmail.com"
               />
             </div>
@@ -56,6 +77,8 @@ const ContactUs = () => {
               <textarea
                 type="text"
                 name="reason"
+                value={formData.message}
+                onChange={handleChange}
                 placeholder="Tell us why you are interested in being a volunteer..."
                 className={styles["text-area"]}
                 rows={7}

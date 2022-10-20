@@ -12,19 +12,19 @@ const Attribute = () => {
         "Let us remember to plant a tree today and keep our communities alive.",
     },
     {
-      id: 1,
+      id: 2,
       hashtag: "#Payaschoolfee",
       content:
         "An empowerment project like this is intended to empower parents to be able to pay for their children’s school fees as they become more economically viable. A support from people for this project will help make this a reality.",
     },
     {
-      id: 1,
+      id: 3,
       hashtag: "#Savealife",
       content:
         "Our every act of kindness helps to save a community of people from oppression and poverty.",
     },
     {
-      id: 1,
+      id: 4,
       hashtag: "#Feedamouth",
       content:
         "Let us join hands to chase hunger and lack from our global community.",
@@ -38,19 +38,19 @@ const Attribute = () => {
         "How sweet it is for us to know that we can be a source of light for others.",
     },
     {
-      id: 1,
+      id: 2,
       hashtag: "#Supportabusiness",
       content:
         "Let us rally round to eliminate poverty from poor communities by supporting an enterprise, today.",
     },
     {
-      id: 1,
+      id: 3,
       hashtag: "#Lightupacommunity",
       content:
         "Together we can chase away poverty, violence, diseases, and hopelessness from our global communities through collaboration. Come, lets light up a community together.",
     },
     {
-      id: 1,
+      id: 4,
       hashtag: "#Quenchathirst",
       content:
         "Shallow streams, long walk, water borne diseases, children, and families. Together we can change this narrative.",

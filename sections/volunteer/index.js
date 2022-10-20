@@ -28,7 +28,7 @@ const Volunteer = () => {
           humanity needs.{" "}
         </p>
         <p className={styles.subtitle}>
-          We always appreciate volunteers who choose decide to work with us on
+          We will always appreciate volunteers who choose to work with us on
           this great mission to help improve the terrible living condition of
           people in our communities.
         </p>
