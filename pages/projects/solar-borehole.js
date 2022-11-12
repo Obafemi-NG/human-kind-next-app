@@ -19,13 +19,12 @@ const SolarBorehole = () => {
           <p className={styles["remark-span"]}>
             We aim to provide access to water in communities where drinking
             water is not readily available to the people. This project is
-            intended to help communities, especially in the rural areas, to
+            intended to help communities, especially in the rural areas to
             overcome challenges relating to water. Through our solar powered
             boreholes, we plan to eliminate limitations caused by inadequate
-            power supply, a trigger to many other problems social problems. We
-            would also be working to eradicate water borne diseases like
-            cholera, typhoid, hepatitis, scabies, amoebiasis, giardiasis and
-            diarrhea.
+            power supply; a trigger to many other social problems. This project
+            will help to eradicate water borne diseases like cholera, typhoid,
+            hepatitis, scabies, amoebiasis, giardiasis and diarrhea.
           </p>
           <p className={styles["remark-span"]}>
             A report from UNICEF states that one third of children in Nigeria;
@@ -70,14 +69,14 @@ const SolarBorehole = () => {
             children and our planet.”
           </p>
           <p className={styles["remark-span"]}>
-            This is one of the driving force behind the formation of The
-            HumanKind Foundation. To support in the global drive to eliminate
-            challenges associated with shortages of drinking water in our
-            communities. Our children and families should not be subjected to a
-            life of pains and denials due to challenges with water supply in our
-            communities. A solar panel borehole will help to bring stability to
-            the communities and restore normalcy as people will then have the
-            privilege to access clean water at anytime.
+            This is a driving force behind the establishment of The HumanKind
+            Foundation. To support in the global drive to eliminate challenges
+            associated with shortages of drinking water in our communities. Our
+            children and families should not be subjected to a life of pains and
+            denials due to challenges with water supply in our communities. A
+            solar panel borehole will help to bring stability to the communities
+            and restore normalcy as people will then have the privilege to
+            access clean water at anytime.
           </p>
         </div>
       </div>

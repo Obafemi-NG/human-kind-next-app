@@ -28,9 +28,9 @@ const Hero = () => {
         </div>
         <p className={styles["hero-subtitle"]}>
           Humankind foundation is a non governmental organization focused on
-          providing developmental solutions to individuals and communities
-          through green energy. We bring strength, stability and self
-          sufficiency to both individuals and under developed or developing
+          providing developmental projects and solutions to individuals and
+          communities through green energy. We bring strength, stability and
+          self sufficiency to household, under-developed and developing
           communities.
         </p>
         <div className={styles["hero-btn"]}>

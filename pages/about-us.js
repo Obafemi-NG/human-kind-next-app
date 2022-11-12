@@ -23,8 +23,8 @@ const AboutUs = () => {
         <hr className={styles["horizontal-line"]} />
         <div className={styles["about-us-text"]}>
           <p className={styles["remark-span"]}>
-            HumanKind Foundation is an NGO that was established in August 2022
-            with the following aims and objectives:
+            HumanKind Foundation is an NGO that was established in 8th of
+            September, 2022 with the following aims and objectives:
           </p>
           <ul className={styles["remark-span"]}>
             <li>
@@ -33,19 +33,18 @@ const AboutUs = () => {
             </li>
             <li>
               {" "}
-              To equip and give support to individuals to help facilitate
-              empowerment programs.
+              To equip and support individuals through empowerment programs.
             </li>
             <li>
               {" "}
-              To expose people to workshops and help to develop the skills set
+              To expose people to workshops inorder to develop the skills set
               and expertise required in building technological solutions from
               enterprise.{" "}
             </li>
             <li>
               {" "}
-              To impact developmental projects across communities in Africa and
-              beyond.
+              To impact communities across Africa and beyond with projects for
+              accelerated development.
             </li>
             <li>
               {" "}
@@ -54,15 +53,13 @@ const AboutUs = () => {
             </li>
           </ul>
           <p className={styles["remark-span"]}>
-            Our world is getting smaller by the day as we have now become a
-            global village. The implication of this is that events and
-            happenings in a small community can directly have a serious effect
-            on other parts of the world. The developed countries of the world,
-            especially the UK, Europe and United States of America have recently
-            been under immense pressure as refugees from many parts of the world
-            flocked towards these directions. The general observation is that
-            this problem might persist incrementally in few years to come if we
-            do not address the root causes.
+            Our world today is global village, where events in a small community
+            can have a direct impact on other part of the world. The developed
+            countries of the world, especially the UK, Europe and United States
+            of America have recently been under immense pressure as refugees
+            from many parts of the world flocked towards these directions. The
+            general observation is that this problem might persist for years if
+            we do not address the root causes.
           </p>
           <p className={styles["remark-span"]}>
             The HumanKind Foundation is positioned to support global efforts to
@@ -110,25 +107,24 @@ const AboutUs = () => {
               The founder of the Humankind Foundation is Femi Okikiola, a
               graduate of B.A History, University of Ilorin (1998). He also had
               an MBA in Human Resources Management from the Lagos State
-              University (2008). Mr. Femi Okikiola had experience that spanned
-              over 15 years, working experience in administration and learning
-              from expatriates who were managers and colleagues on his team. In
-              2016, he set up his first company, MPC Innovation, designed to
-              connect idea owners to investors from parts of the world, online.
-              He also started an HR Consultancy outfit. He presently (2022)
-              consults for Uridium Technologies, an IT company located in Lekki,
-              Lagos.
+              University (2008). Mr. Femi Okikiola had work experience that
+              spanned over 15 years in administration relating with expatriates
+              who were managers and colleagues on his team. In 2016, he set up
+              his first company, MPC Innovation, designed to connect idea owners
+              to investors from parts of the world, online. He also started an
+              HR Consultancy outfit. He presently (2022) consults for Uridium
+              Technologies, an IT company located in Lekki, Lagos.
             </p>
             <p className={styles["remark-span"]}>
               His passion for people was developed in his early days as a young
               man. Mr. Femi feels moved by the lack in his community. He
-              sometimes questions the system on why many people lived a life of
-              scarcity, while some lived in abundance. He is fond of approaching
-              people who he felt needed support and giving out a token, every
-              time he is on the streets. He had mentored people who have risen
-              to build great careers in life. One of them was Samuel, a steward
-              whom he encouraged to continue his education. Samuel is today a
-              lawyer registered with the Nigerian Bar Association.
+              sometimes questions the system on why alot of people lived in
+              poverty. He is fond of approaching people who he felt needed
+              support and giving out a token, every time he is on the streets.
+              He had mentored people who have risen to build great careers in
+              life. One of them is Samuel, a steward whom he encouraged to
+              continue his education. Samuel is today a lawyer registered with
+              the Nigerian Bar Association.
             </p>
             <p className={styles["remark-span"]}>
               The humankind Foundation was formed because of his passion for
@@ -146,7 +142,7 @@ const AboutUs = () => {
               things. He believes that most of the perceptions of old may not be
               able to withstand the challenges of the 21st century as we must do
               away with some of the old ways of thinking and embrace the new
-              order rooted in getting the process right and taking people as a
+              ways rooted in getting the process right and taking people as
               priority in our plans.
             </p>
             <p className={styles["remark-span"]}>
