@@ -56,12 +56,12 @@ const Volunteer = () => {
           </p>
           <p className={styles["form-subtitle"]}>
             {" "}
-            We always appreciate volunteers who choose decide to work with us on
-            this great mission to help improve the terrible living condition of
-            people in our communities.{" "}
+            We will appreciate volunteers who choose to go with us on this
+            mission to help improve the terrible living condition of people in
+            our communities.{" "}
           </p>
           <p className={styles["fill-form"]}>
-            Fill this form to become a volunteer. 👇
+            Kindly f ill this form to become a volunteer. 👇
           </p>
           <form className={styles["form-container"]} onSubmit={handleSubmit}>
             <div className={styles["input-label-container"]}>

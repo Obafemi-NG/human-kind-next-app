@@ -21,11 +21,12 @@ const EmpowermentProject = () => {
             The Humankind Foundation empowerment projects are designed to
             empower people to acquire the required skill set needed to learn
             enterprise in the areas of building of solar panels, fashion and
-            design, cosmetics and soap making, and many other crafts for
-            sustainability. This will help to reduce poverty and encourage
-            enterprise. Our plan is to play an important role in the collective
-            drive to eradicate starvation and poverty, caused by environmental
-            factors; through our empowerment projects.
+            design, cosmetics and soap making, bead making, cake making,
+            hairdressing and cosmetics, cream making, professional photography
+            and many other crafts for sustainability. This will help to reduce
+            poverty and encourage enterprise. Our plan is to play an important
+            role in the collective drive to eradicate starvation and poverty
+            caused by environmental factors through our empowerment projects.
           </p>
           <p className={styles["remark-span"]}>
             There is a huge increase in poverty in our communities as many could

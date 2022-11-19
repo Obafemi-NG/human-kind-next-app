@@ -5,8 +5,22 @@ import donateImage from "../../public/donate_image.webp";
 import DonateNavbar from "../../components/Navbar/donate-navbar";
 import mobileDonateImage from "../../public/mobile-donate-image.webp";
 import ScrollUp from "../../components/scrollUp";
+import { useState } from "react";
 
 const Donate = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const [value, name] = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className={styles["donate-page-container"]}>
       <DonateNavbar />
@@ -56,6 +70,7 @@ const Donate = () => {
                 <input
                   className={styles.input}
                   type="text"
+                  onChange={handleChange}
                   name="fullName"
                   placeholder="John Doe"
                 />
@@ -66,6 +81,7 @@ const Donate = () => {
                 <input
                   className={styles.input}
                   type="tel"
+                  onChange={handleChange}
                   name="phone"
                   placeholder="+2348080045167"
                 />
@@ -76,6 +92,7 @@ const Donate = () => {
                 <input
                   className={styles.input}
                   type="email"
+                  onChange={handleChange}
                   name="email"
                   placeholder="john_doe@gmail.com"
                 />
@@ -86,12 +103,19 @@ const Donate = () => {
                 <textarea
                   type="text"
                   name="reason"
+                  onChange={handleChange}
                   placeholder="Tell us what you would like to donate..."
                   className={styles["text-area"]}
                   rows={7}
                 />
               </div>
-              <button className={styles["volunteer-btn"]}> Donate </button>
+              <button
+                onClick={handleSubmit}
+                className={styles["volunteer-btn"]}
+              >
+                {" "}
+                Donate{" "}
+              </button>
             </form>
           </div>
         </div>
