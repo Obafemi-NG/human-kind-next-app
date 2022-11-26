@@ -61,7 +61,7 @@ const Volunteer = () => {
             our communities.{" "}
           </p>
           <p className={styles["fill-form"]}>
-            Kindly f ill this form to become a volunteer. 👇
+            Kindly fill this form to become a volunteer. 👇
           </p>
           <form className={styles["form-container"]} onSubmit={handleSubmit}>
             <div className={styles["input-label-container"]}>

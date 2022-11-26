@@ -37,7 +37,7 @@ const AboutUs = () => {
             </li>
             <li>
               {" "}
-              To expose people to workshops inorder to develop the skills set
+              To expose people to workshops in order to develop the skills set
               and expertise required in building technological solutions from
               enterprise.{" "}
             </li>
@@ -53,13 +53,13 @@ const AboutUs = () => {
             </li>
           </ul>
           <p className={styles["remark-span"]}>
-            Our world today is global village, where events in a small community
-            can have a direct impact on other part of the world. The developed
-            countries of the world, especially the UK, Europe and United States
-            of America have recently been under immense pressure as refugees
-            from many parts of the world flocked towards these directions. The
-            general observation is that this problem might persist for years if
-            we do not address the root causes.
+            Our world today is a global village where events in a small
+            community can have a direct impact on other parts of the world. The
+            developed countries of the world, especially the UK, Europe and
+            United States of America have recently been under immense pressure
+            as refugees from many parts of the world flocked towards these
+            directions. The general observation is that this problem might
+            persist for years if we do not address the root causes.
           </p>
           <p className={styles["remark-span"]}>
             The HumanKind Foundation is positioned to support global efforts to
@@ -80,10 +80,10 @@ const AboutUs = () => {
           <p className={styles["remark-span"]}>
             We are a voice for our people bringing your attention to the plight
             of the people in our communities. Poverty is a trigger for a lot of
-            society ills which today embattle our commities. Unemployment is
+            society ills which today embattles our commities. Unemployment is
             today on the rise as people struggle to eat a meal a day. The
-            consequence of which is, crime and insecurity. Through our
-            intervention, we hope to address the root causes of these problems.
+            consequence of which is crime and insecurity. Through our
+            interventions, we hope to address the root causes of these problems.
             It is important that we note that we all have a role to play in this
             as we look forward to you to go on this mission with us.
           </p>

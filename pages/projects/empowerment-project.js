@@ -57,11 +57,11 @@ const EmpowermentProject = () => {
           </p>
           <p className={styles["remark-span"]}>
             Like we mentioned earlier on, we would be counting on your support
-            as volunteers on a mission to impact our world in a unique way. We
-            would also be counting on your financial support in form of
+            as volunteers on this mission to impact our world in a unique way.
+            We would also be counting on your financial support in form of
             donations to help make this project a success as there is nothing we
             can achieve without your support. We are opened to partnership as we
-            will count on you to go on with us on this promising mission.
+            count on you to go with us on this promising mission.
           </p>
           <p className={styles["remark-span"]}>Thank you.</p>
         </div>
