@@ -27,11 +27,10 @@ const Hero = () => {
           <Image src="/curved.svg" alt="curved-svg" width={208} height={31} />
         </div>
         <p className={styles["hero-subtitle"]}>
-          Humankind foundation is a non governmental organization focused on
-          providing developmental projects and solutions to individuals and
-          communities through green energy. We bring strength, stability and
-          self sufficiency to household, under-developed and developing
-          communities.
+          Humankind foundation is a non government organization focused on
+          providing developmental projects to communities through green energy.
+          We bring strength, stability and self sufficiency through empowerment
+          to individuals, under-developed and developing communities.
         </p>
         <div className={styles["hero-btn"]}>
           <Link href="/donate">
