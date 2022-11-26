@@ -23,7 +23,7 @@ const AboutUs = () => {
         <hr className={styles["horizontal-line"]} />
         <div className={styles["about-us-text"]}>
           <p className={styles["remark-span"]}>
-            HumanKind Foundation is an NGO that was established in 8th of
+            HumanKind Foundation is an NGO that was established on 8th of
             September, 2022 with the following aims and objectives:
           </p>
           <ul className={styles["remark-span"]}>
