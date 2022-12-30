@@ -76,6 +76,16 @@
   font-style: italic;
   font-size: 14px;
 }
+.asterisk {
+  color: red;
+}
+.instruction {
+  font-style: italic;
+  font-size: 12px;
+  font-family: "Archivo", sans-serif;
+  padding-bottom: 10px;
+  color: #023003;
+}
 .text-area {
   border: 2px solid #5aee55;
   border-radius: 25px;
@@ -99,7 +109,8 @@
   cursor: pointer;
 }
 .volunteer-btn,
-.monetary-btn {
+.monetary-btn,
+.paystack-btn {
   width: 500px;
   height: 47px;
   border: none;
@@ -114,7 +125,27 @@
   margin-top: 20px;
   border-radius: 25px;
 }
+.paystack-btn {
+  background-color: #023003;
+  margin-top: 15px;
+}
+.paystack-input {
+  margin-top: 18px;
+}
 .volunteer-btn:hover {
+  cursor: pointer;
+}
+.other-donation {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 12px;
+  color: #5aee55;
+  text-decoration: underline;
+}
+.other-donation:hover,
+.paystack-btn:hover {
   cursor: pointer;
 }
 
@@ -142,7 +173,8 @@
   .input,
   .text-area,
   .volunteer-btn,
-  .monetary-btn {
+  .monetary-btn,
+  .paystack-btn {
     width: 100%;
   }
   .left-section {

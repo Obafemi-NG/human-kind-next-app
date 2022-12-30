@@ -5,18 +5,21 @@ import styles from "../../styles/volunteer.module.css";
 import volunteerImage from "../../public/volunteer.webp";
 import mobileVolunteerImage from "../../public/mobile-volunteer-image.webp";
 import ScrollUp from "../../components/scrollUp";
-
-import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import { useState, useRef } from "react";
+import { useRouter } from "next/router";
 
 const Volunteer = () => {
+  const form = useRef();
+  const router = useRouter();
   const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
+    from_name: "",
+    volunteer_email: "",
     message: "",
     location: "",
   });
   const handleChange = (e) => {
-    const [name, value] = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
@@ -24,6 +27,29 @@ const Volunteer = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_6g2pnng",
+        "template_2y7w7k9",
+        form.current,
+        "R2-b6OELJ5fikige0"
+      )
+      .then(
+        (result) => {
+          router.push("/volunteer/volunteer-success");
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    // console.log(formData);
+    setFormData({
+      fullName: "",
+      volunteer_email: "",
+      message: "",
+      location: "",
+    });
   };
   return (
     <div className={styles["volunteer-page-container"]}>
@@ -63,31 +89,41 @@ const Volunteer = () => {
           <p className={styles["fill-form"]}>
             Kindly fill this form to become a volunteer. 👇
           </p>
-          <form className={styles["form-container"]} onSubmit={handleSubmit}>
+          <form
+            ref={form}
+            className={styles["form-container"]}
+            onSubmit={handleSubmit}
+          >
             <div className={styles["input-label-container"]}>
-              <label className={styles.label}>Fullname</label>
+              <label className={styles.label}>
+                Fullname <span className={styles.asterisk}>*</span>
+              </label>
               <input
                 className={styles.input}
                 type="text"
-                name="fullName"
+                name="from_name"
                 placeholder="John Doe"
                 onChange={handleChange}
                 value={formData.fullName}
               />
             </div>
             <div className={styles["input-label-container"]}>
-              <label className={styles.label}>Email</label>
+              <label className={styles.label}>
+                Email <span className={styles.asterisk}>*</span>
+              </label>
               <input
                 className={styles.input}
                 type="email"
-                name="email"
+                name="volunteer_email"
                 onChange={handleChange}
                 placeholder="john_doe@gmail.com"
                 value={formData.email}
               />
             </div>
             <div className={styles["input-label-container"]}>
-              <label className={styles.label}>Location</label>
+              <label className={styles.label}>
+                Location <span className={styles.asterisk}>*</span>
+              </label>
               <input
                 className={styles.input}
                 type="text"
@@ -98,12 +134,14 @@ const Volunteer = () => {
               />
             </div>
             <div className={styles["input-label-container"]}>
-              <label className={styles.label}>Reason</label>
+              <label className={styles.label}>
+                Reason <span className={styles.asterisk}>*</span>
+              </label>
               <textarea
                 type="text"
-                value={formData.message}
-                name="reason"
+                name="message"
                 onChange={handleChange}
+                value={formData.reason}
                 placeholder="Tell us why you are interested in being a volunteer..."
                 className={styles["text-area"]}
                 rows={7}

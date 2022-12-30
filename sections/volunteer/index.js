@@ -3,8 +3,10 @@ import styles from "./volunteer.module.css";
 
 import volunteerImage from "../../public/volunteer.webp";
 import mobileVolunteerImage from "../../public/mobile-volunteer-img.webp";
+import { useRouter } from "next/router";
 
 const Volunteer = () => {
+  const router = useRouter();
   return (
     <div className={styles["volunteer-section-container"]}>
       <div className={styles["right-section"]}>
@@ -32,7 +34,10 @@ const Volunteer = () => {
           this great mission to help improve the terrible living condition of
           people in our communities.
         </p>
-        <button className={styles["volunteer-btn"]}>
+        <button
+          onClick={() => router.push("/volunteer")}
+          className={styles["volunteer-btn"]}
+        >
           {" "}
           Volunteer{" "}
           <span className={styles["btn-span"]}>

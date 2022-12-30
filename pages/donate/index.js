@@ -6,20 +6,69 @@ import DonateNavbar from "../../components/Navbar/donate-navbar";
 import mobileDonateImage from "../../public/mobile-donate-image.webp";
 import ScrollUp from "../../components/scrollUp";
 import { useState } from "react";
+import { PaystackButton } from "react-paystack";
+import { useRouter } from "next/router";
+import CurrencyInput from "react-currency-input-field";
 
 const Donate = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
-    name: "",
+    fullName: "",
     phone: "",
     email: "",
-    message: "",
+    reason: "",
+    donatorEmail: "",
   });
+  const [displayEmail, setDisplayEmail] = useState(false);
+  const [amountInput, setAmountInput] = useState("");
+
+  const handleAmountChange = (newValue) => {
+    if (newValue === undefined) {
+      setAmountInput("0");
+    } else {
+      setAmountInput(newValue);
+    }
+  };
+
+  // Paystack Configuration and Logic.
+  const config = {
+    reference: new Date().getTime().toString(),
+    email: formData.donatorEmail,
+    amount: amountInput * 100,
+    publicKey: "pk_live_70d9c3a2e100ef2889050ea0f32bc796641aa758",
+  };
+  const handlePaystackSuccessAction = (reference) => {
+    // Implementation for whatever you want to do with reference and after success call.
+    router.push("/donate/donation-successful");
+    console.log(reference);
+  };
+  // you can call this function anything
+  const handlePaystackCloseAction = () => {
+    // implementation for  whatever you want to do when the Paystack dialog closed.
+    console.log("closed");
+  };
+  const componentProps = {
+    ...config,
+    text: "Donate to HumanKind Foundation",
+    onSuccess: (reference) => handlePaystackSuccessAction(reference),
+    onClose: handlePaystackCloseAction,
+  };
+
+  // Logic to handle input values and submission.
   const handleChange = (e) => {
-    const [value, name] = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFormData({
+      fullName: "",
+      phone: "",
+      email: "",
+      reason: "",
+      donatorEmail: "",
+      amount: "",
+    });
+    console.log(formData);
   };
   return (
     <div className={styles["donate-page-container"]}>
@@ -48,75 +97,141 @@ const Donate = () => {
               Help make the world a{" "}
               <span className={styles["contact-us-span"]}>better</span> place
             </p>
-            <button className={styles["monetary-btn"]}>
-              {" "}
-              Monetary donation{" "}
-              <span>
-                {" "}
-                <Image
-                  src="/monetary_icon.svg"
-                  alt="monetary_icon"
-                  width={24}
-                  height={24}
-                />{" "}
-              </span>
-            </button>
-            <p className={styles["tell-us"]}>
-              Other kinds of donations? kindly fill in the details. 👇
-            </p>
-            <form className={styles["form-container"]}>
-              <div className={styles["input-label-container"]}>
-                <label className={styles.label}>Name</label>
-                <input
-                  className={styles.input}
-                  type="text"
-                  onChange={handleChange}
-                  name="fullName"
-                  placeholder="John Doe"
-                />
-              </div>
 
-              <div className={styles["input-label-container"]}>
-                <label className={styles.label}>Phone</label>
-                <input
-                  className={styles.input}
-                  type="tel"
-                  onChange={handleChange}
-                  name="phone"
-                  placeholder="+2348080045167"
-                />
-              </div>
-
-              <div className={styles["input-label-container"]}>
-                <label className={styles.label}>Email</label>
-                <input
-                  className={styles.input}
-                  type="email"
-                  onChange={handleChange}
-                  name="email"
-                  placeholder="john_doe@gmail.com"
-                />
-              </div>
-
-              <div className={styles["input-label-container"]}>
-                <label className={styles.label}>Message</label>
-                <textarea
-                  type="text"
-                  name="reason"
-                  onChange={handleChange}
-                  placeholder="Tell us what you would like to donate..."
-                  className={styles["text-area"]}
-                  rows={7}
-                />
-              </div>
+            {!displayEmail && (
               <button
-                onClick={handleSubmit}
-                className={styles["volunteer-btn"]}
+                onClick={() => setDisplayEmail(!displayEmail)}
+                className={styles["monetary-btn"]}
               >
                 {" "}
-                Donate{" "}
+                Monetary donation{" "}
               </button>
-            </form>
+            )}
+            {displayEmail && (
+              <div className={styles["paystack-input"]}>
+                <p className={styles.instruction}>
+                  Fields with asterisks are required
+                </p>
+                <div className={styles["input-label-container"]}>
+                  <label className={styles.label}>
+                    Email <span className={styles.asterisk}>*</span>
+                  </label>
+                  <input
+                    className={styles.input}
+                    type="email"
+                    onChange={handleChange}
+                    name="donatorEmail"
+                    placeholder="donator@gmail.com"
+                    value={formData.donatorEmail}
+                    required
+                  />
+                </div>
+                <div className={styles["input-label-container"]}>
+                  <label className={styles.label}>
+                    Amount <span className={styles.asterisk}>*</span>{" "}
+                  </label>
+                  <CurrencyInput
+                    className={styles.input}
+                    id="input-currency-field"
+                    name="amount"
+                    prefix="₦"
+                    decimalsLimit={2}
+                    value={amountInput}
+                    placeholder="₦10,000,000.00"
+                    onValueChange={handleAmountChange}
+                  />
+                </div>
+                <PaystackButton
+                  className={styles["paystack-btn"]}
+                  {...componentProps}
+                />
+                <h4
+                  onClick={() => setDisplayEmail(!displayEmail)}
+                  className={styles["other-donation"]}
+                >
+                  {" "}
+                  Make other donations.{" "}
+                </h4>
+              </div>
+            )}
+            {!displayEmail && (
+              <>
+                <p className={styles["tell-us"]}>
+                  Other kinds of donations? kindly fill in the details. 👇
+                </p>
+                <form className={styles["form-container"]}>
+                  <p className={styles.instruction}>
+                    Fields with asterisks are required
+                  </p>
+                  <div className={styles["input-label-container"]}>
+                    <label className={styles.label}>
+                      Name <span className={styles.asterisk}>*</span>
+                    </label>
+                    <input
+                      className={styles.input}
+                      type="text"
+                      onChange={handleChange}
+                      name="fullName"
+                      placeholder="John Doe"
+                      value={formData.fullName}
+                      required
+                    />
+                  </div>
+
+                  <div className={styles["input-label-container"]}>
+                    <label className={styles.label}>
+                      Phone <span className={styles.asterisk}>*</span>
+                    </label>
+                    <input
+                      className={styles.input}
+                      type="tel"
+                      onChange={handleChange}
+                      name="phone"
+                      placeholder="+2348080045167"
+                      value={formData.phone}
+                      required
+                    />
+                  </div>
+
+                  <div className={styles["input-label-container"]}>
+                    <label className={styles.label}>
+                      Email <span className={styles.asterisk}>*</span>
+                    </label>
+                    <input
+                      className={styles.input}
+                      type="email"
+                      onChange={handleChange}
+                      name="email"
+                      placeholder="john_doe@gmail.com"
+                      value={formData.email}
+                      required
+                    />
+                  </div>
+
+                  <div className={styles["input-label-container"]}>
+                    <label className={styles.label}>
+                      Message <span className={styles.asterisk}>*</span>
+                    </label>
+                    <textarea
+                      type="text"
+                      name="reason"
+                      onChange={handleChange}
+                      placeholder="Tell us what you would like to donate..."
+                      className={styles["text-area"]}
+                      rows={7}
+                      value={formData.reason}
+                    />
+                  </div>
+                  <button
+                    onClick={handleSubmit}
+                    className={styles["volunteer-btn"]}
+                  >
+                    {" "}
+                    Donate{" "}
+                  </button>
+                </form>
+              </>
+            )}
           </div>
         </div>
       </div>

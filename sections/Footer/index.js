@@ -7,9 +7,16 @@ const Footer = () => {
   return (
     <div className={styles["footer-container"]}>
       <div className={styles["about-section"]}>
-        <div className={styles["logo-container"]}>
+        {/* <div className={styles["logo-container"]}>
           <Image src={logo} alt="Humankind_logo" />
-        </div>
+        </div> */}
+        <Link href="/">
+          <a>
+            <div className={styles["logo-container"]}>
+              <Image src={logo} alt="Humankind_logo" />
+            </div>
+          </a>
+        </Link>
         <div className={styles["descriptive-text"]}>
           At humankind our efforts are channeled towards improving living
           conditions through community based projects and skills empowerment
@@ -109,7 +116,7 @@ const Footer = () => {
           </span>{" "}
           +234 811 200 1648
         </p>
-        <p className={styles.email}>hfglobal@humankindorg.com</p>
+        <p className={styles.email}>hfHQ@humankindorg.com</p>
       </div>
     </div>
   );
