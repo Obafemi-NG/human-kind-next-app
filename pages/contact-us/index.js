@@ -5,17 +5,21 @@ import Footer from "../../sections/Footer";
 import contactUsImage from "../../public/contact-us.webp";
 import mobileContactUsImage from "../../public/mobile-contact-us.webp";
 import ScrollUp from "../../components/scrollUp";
+import emailjs from "@emailjs/browser";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useRouter } from "next/router";
 
 const ContactUs = () => {
+  const form = useRef();
+  const router = useRouter();
   const [formData, setFormData] = useState({
-    fullName: "",
+    from_name: "",
     email: "",
     message: "",
   });
   const handleChange = (e) => {
-    const [name, value] = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
@@ -23,6 +27,23 @@ const ContactUs = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_6g2pnng",
+        "template_waw8y9q",
+        form.current,
+        "R2-b6OELJ5fikige0"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          router.push("/contact-us/contact-success");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <div className={styles["contact-us-container"]}>
@@ -48,20 +69,28 @@ const ContactUs = () => {
           <p className={styles["tell-us"]}>
             Tell us what&rsquo;s on your mind. 👇
           </p>
-          <form className={styles["form-container"]} onSubmit={handleSubmit}>
+          <form
+            ref={form}
+            className={styles["form-container"]}
+            onSubmit={handleSubmit}
+          >
             <div className={styles["input-label-container"]}>
-              <label className={styles.label}>Name</label>
+              <label className={styles.label}>
+                Name <span className={styles.asterisk}>*</span>
+              </label>
               <input
                 className={styles.input}
                 type="text"
-                name="fullName"
+                name="from_name"
                 onChange={handleChange}
                 value={formData.fullName}
                 placeholder="John Doe"
               />
             </div>
             <div className={styles["input-label-container"]}>
-              <label className={styles.label}>Email</label>
+              <label className={styles.label}>
+                Email <span className={styles.asterisk}>*</span>
+              </label>
               <input
                 className={styles.input}
                 type="email"
@@ -73,10 +102,12 @@ const ContactUs = () => {
             </div>
 
             <div className={styles["input-label-container"]}>
-              <label className={styles.label}>Message</label>
+              <label className={styles.label}>
+                Message <span className={styles.asterisk}>*</span>
+              </label>
               <textarea
                 type="text"
-                name="reason"
+                name="message"
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Tell us why you are interested in being a volunteer..."
@@ -103,7 +134,7 @@ const ContactUs = () => {
           {" "}
           Give us a call - or better still - come around to say hi.{" "}
         </p>
-        <p className={styles.email}> hfglobal@humankindorg.com </p>
+        <p className={styles.email}> hfHQ@humankindorg.com </p>
       </div>
       <ScrollUp />
       <Footer />

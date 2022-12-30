@@ -73,6 +73,9 @@
   font-size: 18px;
   color: #023003;
 }
+.asterisk {
+  color: red;
+}
 .input::placeholder {
   font-style: italic;
   font-size: 14px;

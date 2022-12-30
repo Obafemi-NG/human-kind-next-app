@@ -4,8 +4,10 @@ import Footer from "../../sections/Footer";
 import SuccessImage from "../../public/amico.webp";
 import Image from "next/image";
 import ScrollUp from "../../components/scrollUp";
+import { useRouter } from "next/router";
 
 const ContactSuccess = () => {
+  const router = useRouter();
   return (
     <div className={styles["contact-success-container"]}>
       <Navbar />
@@ -26,7 +28,13 @@ const ContactSuccess = () => {
       <p className={styles["anything-else"]}>
         {" "}
         Anything else? Read from our{" "}
-        <span className={styles["event-btn"]}> blog </span>{" "}
+        <span
+          onClick={() => router.push("/blog-posts")}
+          className={styles["event-btn"]}
+        >
+          {" "}
+          blog{" "}
+        </span>{" "}
       </p>
       <Footer />
     </div>
